@@ -1,0 +1,8 @@
+package com.lv.mapper;
+
+import com.lv.entity.User;
+
+public class UserMapper {
+	
+	User findById(int id);
+}	

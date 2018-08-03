@@ -1,0 +1,10 @@
+package util;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+public class MyBatisUtil {
+
+	public static SqlSessionFactory getSqlSessionFactory() {
+		return null;
+	}
+}

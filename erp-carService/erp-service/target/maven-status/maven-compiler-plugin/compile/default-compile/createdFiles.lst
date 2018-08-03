@@ -1,0 +1,3 @@
+com\ksit\erp\service\IRoleService.class
+com\ksit\erp\service\IEmployeeService.class
+com\ksit\erp\service\IPermissionService.class

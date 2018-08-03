@@ -1,0 +1,40 @@
+POST http://localhost:8080/user/login.do?username=houfalv&password=root
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-12T121133.200.json
+
+###
+
+POST http://localhost:8080/user/login.do?username=houfalv&password=root
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-12T121031.200.json
+
+###
+
+POST http://localhost:8080/user/login.do?username=houfalv&password=root
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-12T120651.500.html
+
+###
+
+POST http://localhost:8080/user/login.do?username=houfalv&password=root
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-12T120430.500.html
+
+###
+
+POST http://localhost:8080/login.do?username=houfalv&password=root
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-07-12T120411.404.html
+
+###
+

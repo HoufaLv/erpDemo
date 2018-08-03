@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lv.mapper.ScenicCommonMapper">
+  <resultMap id="BaseResultMap" type="com.lv.entity.ScenicCommon">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="scenic_id" jdbcType="INTEGER" property="scenicId" />
+    <result column="scenic_common" jdbcType="VARCHAR" property="scenicCommon" />
+    <result column="scenic_common_pic" jdbcType="VARCHAR" property="scenicCommonPic" />
+    <result column="scenic_common_start" jdbcType="VARCHAR" property="scenicCommonStart" />
+    <result column="scenic_create_time" jdbcType="TIMESTAMP" property="scenicCreateTime" />
+    <result column="scenic_update_time" jdbcType="TIMESTAMP" property="scenicUpdateTime" />
+    <result column="scenic_state" jdbcType="VARCHAR" property="scenicState" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, scenic_id, scenic_common, scenic_common_pic, scenic_common_start, scenic_create_time, 
+    scenic_update_time, scenic_state
+  </sql>
+  <select id="selectByExample" parameterType="com.lv.entity.ScenicCommonExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from scenic_common
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from scenic_common
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from scenic_common
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lv.entity.ScenicCommonExample">
+    delete from scenic_common
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lv.entity.ScenicCommon">
+    insert into scenic_common (id, scenic_id, scenic_common, 
+      scenic_common_pic, scenic_common_start, scenic_create_time, 
+      scenic_update_time, scenic_state)
+    values (#{id,jdbcType=INTEGER}, #{scenicId,jdbcType=INTEGER}, #{scenicCommon,jdbcType=VARCHAR}, 
+      #{scenicCommonPic,jdbcType=VARCHAR}, #{scenicCommonStart,jdbcType=VARCHAR}, #{scenicCreateTime,jdbcType=TIMESTAMP}, 
+      #{scenicUpdateTime,jdbcType=TIMESTAMP}, #{scenicState,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lv.entity.ScenicCommon">
+    insert into scenic_common
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="scenicId != null">
+        scenic_id,
+      </if>
+      <if test="scenicCommon != null">
+        scenic_common,
+      </if>
+      <if test="scenicCommonPic != null">
+        scenic_common_pic,
+      </if>
+      <if test="scenicCommonStart != null">
+        scenic_common_start,
+      </if>
+      <if test="scenicCreateTime != null">
+        scenic_create_time,
+      </if>
+      <if test="scenicUpdateTime != null">
+        scenic_update_time,
+      </if>
+      <if test="scenicState != null">
+        scenic_state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="scenicId != null">
+        #{scenicId,jdbcType=INTEGER},
+      </if>
+      <if test="scenicCommon != null">
+        #{scenicCommon,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicCommonPic != null">
+        #{scenicCommonPic,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicCommonStart != null">
+        #{scenicCommonStart,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicCreateTime != null">
+        #{scenicCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="scenicUpdateTime != null">
+        #{scenicUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="scenicState != null">
+        #{scenicState,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lv.entity.ScenicCommonExample" resultType="java.lang.Long">
+    select count(*) from scenic_common
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update scenic_common
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.scenicId != null">
+        scenic_id = #{record.scenicId,jdbcType=INTEGER},
+      </if>
+      <if test="record.scenicCommon != null">
+        scenic_common = #{record.scenicCommon,jdbcType=VARCHAR},
+      </if>
+      <if test="record.scenicCommonPic != null">
+        scenic_common_pic = #{record.scenicCommonPic,jdbcType=VARCHAR},
+      </if>
+      <if test="record.scenicCommonStart != null">
+        scenic_common_start = #{record.scenicCommonStart,jdbcType=VARCHAR},
+      </if>
+      <if test="record.scenicCreateTime != null">
+        scenic_create_time = #{record.scenicCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.scenicUpdateTime != null">
+        scenic_update_time = #{record.scenicUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.scenicState != null">
+        scenic_state = #{record.scenicState,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update scenic_common
+    set id = #{record.id,jdbcType=INTEGER},
+      scenic_id = #{record.scenicId,jdbcType=INTEGER},
+      scenic_common = #{record.scenicCommon,jdbcType=VARCHAR},
+      scenic_common_pic = #{record.scenicCommonPic,jdbcType=VARCHAR},
+      scenic_common_start = #{record.scenicCommonStart,jdbcType=VARCHAR},
+      scenic_create_time = #{record.scenicCreateTime,jdbcType=TIMESTAMP},
+      scenic_update_time = #{record.scenicUpdateTime,jdbcType=TIMESTAMP},
+      scenic_state = #{record.scenicState,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lv.entity.ScenicCommon">
+    update scenic_common
+    <set>
+      <if test="scenicId != null">
+        scenic_id = #{scenicId,jdbcType=INTEGER},
+      </if>
+      <if test="scenicCommon != null">
+        scenic_common = #{scenicCommon,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicCommonPic != null">
+        scenic_common_pic = #{scenicCommonPic,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicCommonStart != null">
+        scenic_common_start = #{scenicCommonStart,jdbcType=VARCHAR},
+      </if>
+      <if test="scenicCreateTime != null">
+        scenic_create_time = #{scenicCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="scenicUpdateTime != null">
+        scenic_update_time = #{scenicUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="scenicState != null">
+        scenic_state = #{scenicState,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lv.entity.ScenicCommon">
+    update scenic_common
+    set scenic_id = #{scenicId,jdbcType=INTEGER},
+      scenic_common = #{scenicCommon,jdbcType=VARCHAR},
+      scenic_common_pic = #{scenicCommonPic,jdbcType=VARCHAR},
+      scenic_common_start = #{scenicCommonStart,jdbcType=VARCHAR},
+      scenic_create_time = #{scenicCreateTime,jdbcType=TIMESTAMP},
+      scenic_update_time = #{scenicUpdateTime,jdbcType=TIMESTAMP},
+      scenic_state = #{scenicState,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

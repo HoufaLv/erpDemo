@@ -1,0 +1,5 @@
+package com.lv.util;
+
+public class MybatisUtil {
+
+}

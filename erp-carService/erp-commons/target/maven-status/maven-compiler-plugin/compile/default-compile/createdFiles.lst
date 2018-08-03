@@ -1,0 +1,13 @@
+com\ksit\erp\entity\Permission.class
+com\ksit\erp\entity\EmployeeRole.class
+com\ksit\erp\entity\Employee.class
+com\ksit\erp\dto\ResponseCode.class
+com\ksit\erp\entity\EmployeeLoginLog.class
+com\ksit\erp\dto\ServerResponse.class
+com\ksit\erp\dto\PermissionDTO.class
+com\ksit\erp\util\Const.class
+com\ksit\erp\entity\Parts.class
+com\ksit\erp\entity\RolePermission.class
+com\ksit\erp\entity\Role.class
+com\ksit\erp\entity\Type.class
+com\ksit\erp\exception\ServiceException.class

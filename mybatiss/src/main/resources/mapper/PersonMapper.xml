@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lv.mapper.PersonMapper">
+
+    <sql id="Base_Column_List">
+        id, name, gender, school_id
+    </sql>
+
+    <insert id="batchInsert" parameterType="list">
+        insert into person (name,gender,school_id) values
+        <foreach collection="list" item="person" separator=",">
+            (
+                #{person.name},
+                #{person.gender},
+                #{person.schoolId}
+            )
+        </foreach>
+    </insert>
+
+    <resultMap id="baseMap" type="Person">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="gender" property="gender"/>
+        <result column="school_id" property="schoolId"/>
+    </resultMap>
+
+    <!--多对1关系，在多的一方封装1的对象-->
+    <resultMap id="PersonWithScholMap" type="Person" extends="baseMap">
+        <association property="school" javaType="School" column="school_id">
+            <id column="id" property="id"/>
+            <result property="name" column="school_name"/>
+            <result property="address" column="address"/>
+        </association>
+    </resultMap>
+
+    <select id="listPerson" resultMap="PersonWithScholMap">
+        SELECT
+            person.id,
+            person.NAME   as name,
+            person.gender,
+            school.id     as school_id,
+            school.`name` as school_name,
+            school.address
+        FROM
+            person
+            LEFT JOIN school ON person.school_id = school.id
+    </select>
+    <select id="selectByPersonId" resultMap="PersonWithScholMap">
+        SELECT
+            person.id,
+            person.NAME   AS NAME,
+            person.gender,
+            school.id     AS school_id,
+            school.`name` AS school_name,
+            school.address
+        FROM
+            person
+            LEFT JOIN school ON person.school_id = school.id
+        WHERE
+            person.id = #{id}
+    </select>
+
+    <!--动态sql if 语句的使用-->
+    <select id="selectByMap" resultType="com.lv.entity.Person">
+        select
+        <include refid="Base_Column_List"/>
+        from person
+        where id = #{id}
+        <if test="name!=null and name!=''">
+            and name = #{name}
+        </if>
+    </select>
+
+    <!--动态sql choose 语句的使用,找出schoolId 为2 的学生，如果有name，匹配name，如果有性别，匹配性别-->
+    <select id="selectByNameOrGender" resultType="com.lv.entity.Person">
+        select
+        <include refid="Base_Column_List"/>
+        from person where school_id=2
+        <choose>
+            <when test="name!=null">
+                and name = #{name}
+            </when>
+            <when test="id!=null">
+                and id = #{id}
+            </when>
+            <when test="gender!=null">
+                and gender = #{gender}
+            </when>
+        </choose>
+    </select>
+
+    <select id="selectByWhere" resultType="com.lv.entity.Person">
+        select
+        <include refid="Base_Column_List"/>
+        from person
+        <where>
+            <choose>
+                <when test="name!=null">
+                    and name = #{name}
+                </when>
+                <when test="id!=null">
+                    and id = #{id}
+                </when>
+                <when test="gender!=null">
+                    and gender = #{gender}
+                </when>
+            </choose>
+        </where>
+    </select>
+
+    <select id="selectByTrim" resultType="com.lv.entity.Person">
+        select
+        <include refid="Base_Column_List"/>
+        from person
+        <trim prefix="WHERE" prefixOverrides="AND |OR">
+            <if test="name!=null">
+                and name = #{name}
+            </if>
+            <if test="id!=null">
+                and id = #{id}
+            </if>
+            <if test="gender!=null">
+                and gender = #{gender}
+            </if>
+        </trim>
+    </select>
+
+</mapper>

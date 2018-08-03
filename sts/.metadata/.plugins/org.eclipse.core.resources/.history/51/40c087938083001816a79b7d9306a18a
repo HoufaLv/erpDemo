@@ -1,0 +1,57 @@
+package com.lv.test;
+
+import java.io.IOException;
+
+import org.apache.ibatis.session.SqlSession;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
+import com.lv.entity.User;
+
+import util.MyBatisUtil;
+
+public class MyBatisTestCase {
+
+	private static SqlSession SqlSession;
+
+	@Before
+	public void init() throws IOException {
+		SqlSession = MyBatisUtil.getSqlSession();
+	}
+
+	@After
+	public void release() {
+		SqlSession.close();
+	}
+
+	/**
+	 * 查询单个
+	 * 
+	 * @throws IOException
+	 */
+	@Test
+	public void mybatisSelectOneTestCase() throws IOException {
+		User user = SqlSession.selectOne("com.lv.mapper.UserMapper.findById", 1);
+		System.out.println(user);
+	}
+
+	/**
+	 * 插入单条记录
+	 */
+	@Test
+	public void insertTestCase() {
+		int insert = SqlSession.insert("com.lv.mapper.UserMapper.insertUser", new User("tom", "tom"));
+	}
+
+	@Test
+	public void updateTestCase() {
+		User user = SqlSession.selectOne("com.lv.mapper.UserMapper.findById", 1);
+		user.setUsername("lili");
+		user.setPassword("lili");
+
+		int update = SqlSession.update("com.lv.mapper.UserMapper.updateUserById", user);
+
+	}
+}

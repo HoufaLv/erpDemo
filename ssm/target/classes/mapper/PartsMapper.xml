@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lv.mapper.PartsMapper">
+    <resultMap id="BaseResultMap" type="com.lv.entity.Parts">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="parts_no" jdbcType="VARCHAR" property="partsNo"/>
+        <result column="parts_name" jdbcType="VARCHAR" property="partsName"/>
+        <result column="in_price" jdbcType="DECIMAL" property="inPrice"/>
+        <result column="sale_price" jdbcType="DECIMAL" property="salePrice"/>
+        <result column="inventory" jdbcType="INTEGER" property="inventory"/>
+        <result column="type_id" jdbcType="INTEGER" property="typeId"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, parts_no, parts_name, in_price, sale_price, inventory, type_id, address
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from parts
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+
+    <!--分页查找对应的List<Parts>-->
+    <select id="findPageWithType" resultMap="PartsTypeResultMap">
+        SELECT
+            parts.id,
+            parts_no,
+            parts_name,
+            in_price,
+            sale_price,
+            inventory,
+            type_id,
+            address,
+            type.type_name
+        FROM
+            parts
+            LEFT JOIN type
+                ON
+                    parts.type_id = type.id
+    </select>
+    <select id="listPartsByPageNo" resultMap="PartsTypeResultMap">
+        select
+            parts.id,
+            parts_no,
+            parts_name,
+            in_price,
+            sale_price,
+            inventory,
+            type_id,
+            address,
+            type.type_name
+        from parts
+            left join type
+                on parts.type_id = type.id
+    </select>
+    <select id="queryPartsByConditionWithPage" parameterType="map" resultMap="PartsTypeResultMap">
+        select
+            parts.id,
+            parts_no,
+            parts_name,
+            in_price,
+            sale_price,
+            inventory,
+            type_id,
+            address,
+            type.type_name
+
+            from parts
+            left join type
+          on parts.type_id = type.id
+        <where>
+            <if test="partsName !=null and partsName!=''">
+                parts.parts_name like concat('%',#{partsName},'%')
+            </if>
+            <if test="inventory !=null and inventory!=''">
+                and parts.inventory &lt; #{inventory}
+            </if>
+            <if test="partsType !=null and partsType!=''">
+                and type.id = #{partsType}
+            </if>
+        </where>
+    </select>
+
+    <select id="validateParts" resultType="java.lang.Integer" parameterType="map">
+      select count(1) from parts
+        where
+        <foreach collection="queryMap.keys" item="key" open="(" close=")" separator=",">
+            ${key}
+        </foreach>
+        =
+        <foreach collection="queryMap.keys" item="key" open="(" close=")" separator=",">
+            #{queryMap[${key}]}
+        </foreach>
+    </select>
+
+    <resultMap id="PartsTypeResultMap" type="com.lv.entity.Parts" extends="BaseResultMap">
+        <association property="type" javaType="com.lv.entity.Type" column="type_id">
+            <id column="type_id" property="id"/>
+            <result column="type_name" property="typeName"/>
+        </association>
+    </resultMap>
+
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from parts
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.lv.entity.Parts">
+        insert into parts (id, parts_no, parts_name,
+                           in_price, sale_price, inventory,
+                           type_id, address)
+        values (#{id,jdbcType=INTEGER}, #{partsNo,jdbcType=VARCHAR}, #{partsName,jdbcType=VARCHAR},
+                #{inPrice,jdbcType=DECIMAL}, #{salePrice,jdbcType=DECIMAL}, #{inventory,jdbcType=INTEGER},
+                #{typeId,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR})
+    </insert>
+    <insert id="insertSelective" parameterType="com.lv.entity.Parts">
+        insert into parts
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="partsNo != null">
+                parts_no,
+            </if>
+            <if test="partsName != null">
+                parts_name,
+            </if>
+            <if test="inPrice != null">
+                in_price,
+            </if>
+            <if test="salePrice != null">
+                sale_price,
+            </if>
+            <if test="inventory != null">
+                inventory,
+            </if>
+            <if test="typeId != null">
+                type_id,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="partsNo != null">
+                #{partsNo,jdbcType=VARCHAR},
+            </if>
+            <if test="partsName != null">
+                #{partsName,jdbcType=VARCHAR},
+            </if>
+            <if test="inPrice != null">
+                #{inPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="salePrice != null">
+                #{salePrice,jdbcType=DECIMAL},
+            </if>
+            <if test="inventory != null">
+                #{inventory,jdbcType=INTEGER},
+            </if>
+            <if test="typeId != null">
+                #{typeId,jdbcType=INTEGER},
+            </if>
+            <if test="address != null">
+                #{address,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.lv.entity.Parts">
+        update parts
+        <set>
+            <if test="partsNo != null">
+                parts_no = #{partsNo,jdbcType=VARCHAR},
+            </if>
+            <if test="partsName != null">
+                parts_name = #{partsName,jdbcType=VARCHAR},
+            </if>
+            <if test="inPrice != null">
+                in_price = #{inPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="salePrice != null">
+                sale_price = #{salePrice,jdbcType=DECIMAL},
+            </if>
+            <if test="inventory != null">
+                inventory = #{inventory,jdbcType=INTEGER},
+            </if>
+            <if test="typeId != null">
+                type_id = #{typeId,jdbcType=INTEGER},
+            </if>
+            <if test="address != null">
+                address = #{address,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.lv.entity.Parts">
+        update parts
+        set parts_no   = #{partsNo,jdbcType=VARCHAR},
+            parts_name = #{partsName,jdbcType=VARCHAR},
+            in_price   = #{inPrice,jdbcType=DECIMAL},
+            sale_price = #{salePrice,jdbcType=DECIMAL},
+            inventory  = #{inventory,jdbcType=INTEGER},
+            type_id    = #{typeId,jdbcType=INTEGER},
+            address    = #{address,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

@@ -1,0 +1,14 @@
+com\ksit\erp\service\serviceImpl\PermissionServiceImpl$1.class
+com\ksit\erp\mapper\EmployeeMapper.class
+com\ksit\erp\mapper\PermissionMapper.class
+com\ksit\erp\service\serviceImpl\RoleServiceImpl$1.class
+com\ksit\erp\mapper\RolePermissionMapper.class
+com\ksit\erp\mapper\PartsMapper.class
+com\ksit\erp\mapper\EmployeeRoleMapper.class
+com\ksit\erp\service\serviceImpl\RoleServiceImpl.class
+com\ksit\erp\shiro\MyRealm.class
+com\ksit\erp\mapper\RoleMapper.class
+com\ksit\erp\service\serviceImpl\PermissionServiceImpl.class
+com\ksit\erp\service\serviceImpl\EmployeeServiceImpl.class
+com\ksit\erp\mapper\EmployeeLoginLogMapper.class
+com\ksit\erp\mapper\TypeMapper.class

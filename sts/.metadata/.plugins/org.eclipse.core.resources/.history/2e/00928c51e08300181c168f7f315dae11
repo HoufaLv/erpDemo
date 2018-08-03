@@ -1,0 +1,11 @@
+package com.lv.test;
+
+import org.junit.Before;
+
+public class MyBatisMapperTestCase {
+	
+	@Before
+	public void init() {
+		
+	}
+}

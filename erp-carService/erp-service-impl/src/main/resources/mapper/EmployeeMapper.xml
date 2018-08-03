@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ksit.erp.mapper.EmployeeMapper">
+    <resultMap id="BaseResultMap" type="com.ksit.erp.entity.Employee">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="employee_name" jdbcType="VARCHAR" property="employeeName"/>
+        <result column="role_id" jdbcType="INTEGER" property="roleId"/>
+        <result column="employee_password" jdbcType="VARCHAR" property="employeePassword"/>
+        <result column="permission_id" jdbcType="INTEGER" property="permissionId"/>
+        <result column="employee_create_time" jdbcType="TIMESTAMP" property="employeeCreateTime"/>
+        <result column="employee_state" jdbcType="INTEGER" property="employeeState"/>
+        <result column="employee_pic_front" jdbcType="VARCHAR" property="employeePicFront"/>
+        <result column="employee_level" jdbcType="VARCHAR" property="employeeLevel"/>
+        <result column="employee_tel" jdbcType="VARCHAR" property="employeeTel"/>
+        <result column="department_id" jdbcType="INTEGER" property="departmentId"/>
+        <result column="employee_email" jdbcType="VARCHAR" property="employeeEmail"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, employee_name, role_id, employee_password, permission_id, employee_create_time,
+        employee_state, employee_pic_front, employee_level, employee_tel, department_id,
+        employee_email
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from employee
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <!--根据雇员email 查询雇员信息-->
+    <select id="queryByEmployeeEmail" resultType="com.ksit.erp.entity.Employee">
+        select
+        <include refid="Base_Column_List"/>
+        from employee where employee_email = #{employeeEmail}
+    </select>
+    <!--条件验证-->
+    <select id="validate" resultType="java.lang.Integer" parameterType="map">
+        select COUNT(1) from employee where
+        <foreach collection="paramMap.keys" item="key" open="(" close=")" separator=",">
+            ${key}
+        </foreach>
+        =
+        <foreach collection="paramMap.keys" item="key" open="(" close=")" separator=",">
+            #{paramMap[${key}]}
+        </foreach>
+    </select>
+
+    <select id="listEmployeeWithRole" resultMap="employeeRoleResultMap">
+        SELECT
+            employee.*,
+            role.*
+        FROM
+            employee
+            LEFT JOIN employee_role ON employee.id = employee_role.employee_id
+            LEFT JOIN role ON employee_role.role_id = role.id
+    </select>
+    <select id="queryEmployeeWithRoleById" resultMap="employeeRoleResultMap">
+        SELECT
+            employee.*,
+            role.*
+        FROM
+            employee
+            LEFT JOIN employee_role ON employee.id = employee_role.employee_id
+            LEFT JOIN role ON employee_role.role_id = role.id
+        where
+            employee_id = #{id}
+    </select>
+    <resultMap id="employeeRoleResultMap" type="com.ksit.erp.entity.Employee" extends="BaseResultMap">
+        <collection property="roleList" ofType="com.ksit.erp.entity.Role">
+            <id property="id" column="id1"/>
+            <result property="roleName" column="role_name"/>
+            <result property="roleCode" column="role_code"/>
+            <result property="createTime" column="create_time"/>
+            <result property="updateTime" column="update_time"/>
+        </collection>
+    </resultMap>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from employee
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.ksit.erp.entity.Employee" useGeneratedKeys="true" keyProperty="id">
+        insert into employee (id, employee_name, role_id,
+                              employee_password, permission_id, employee_create_time,
+                              employee_state, employee_pic_front, employee_level,
+                              employee_tel, department_id, employee_email
+        )
+        values (#{id,jdbcType=INTEGER}, #{employeeName,jdbcType=VARCHAR}, #{roleId,jdbcType=INTEGER},
+                                        #{employeePassword,jdbcType=VARCHAR}, #{permissionId,jdbcType=INTEGER},
+                                        #{employeeCreateTime,jdbcType=TIMESTAMP},
+                                        #{employeeState,jdbcType=INTEGER}, #{employeePicFront,jdbcType=VARCHAR},
+                                        #{employeeLevel,jdbcType=VARCHAR},
+                                        #{employeeTel,jdbcType=VARCHAR}, #{departmentId,jdbcType=INTEGER},
+                #{employeeEmail,jdbcType=VARCHAR}
+        )
+    </insert>
+    <insert id="insertSelective" parameterType="com.ksit.erp.entity.Employee">
+        insert into employee
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="employeeName != null">
+                employee_name,
+            </if>
+            <if test="roleId != null">
+                role_id,
+            </if>
+            <if test="employeePassword != null">
+                employee_password,
+            </if>
+            <if test="permissionId != null">
+                permission_id,
+            </if>
+            <if test="employeeCreateTime != null">
+                employee_create_time,
+            </if>
+            <if test="employeeState != null">
+                employee_state,
+            </if>
+            <if test="employeePicFront != null">
+                employee_pic_front,
+            </if>
+            <if test="employeeLevel != null">
+                employee_level,
+            </if>
+            <if test="employeeTel != null">
+                employee_tel,
+            </if>
+            <if test="departmentId != null">
+                department_id,
+            </if>
+            <if test="employeeEmail != null">
+                employee_email,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="employeeName != null">
+                #{employeeName,jdbcType=VARCHAR},
+            </if>
+            <if test="roleId != null">
+                #{roleId,jdbcType=INTEGER},
+            </if>
+            <if test="employeePassword != null">
+                #{employeePassword,jdbcType=VARCHAR},
+            </if>
+            <if test="permissionId != null">
+                #{permissionId,jdbcType=INTEGER},
+            </if>
+            <if test="employeeCreateTime != null">
+                #{employeeCreateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="employeeState != null">
+                #{employeeState,jdbcType=INTEGER},
+            </if>
+            <if test="employeePicFront != null">
+                #{employeePicFront,jdbcType=VARCHAR},
+            </if>
+            <if test="employeeLevel != null">
+                #{employeeLevel,jdbcType=VARCHAR},
+            </if>
+            <if test="employeeTel != null">
+                #{employeeTel,jdbcType=VARCHAR},
+            </if>
+            <if test="departmentId != null">
+                #{departmentId,jdbcType=INTEGER},
+            </if>
+            <if test="employeeEmail != null">
+                #{employeeEmail,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.ksit.erp.entity.Employee">
+        update employee
+        <set>
+            <if test="employeeName != null">
+                employee_name = #{employeeName,jdbcType=VARCHAR},
+            </if>
+            <if test="roleId != null">
+                role_id = #{roleId,jdbcType=INTEGER},
+            </if>
+            <if test="employeePassword != null">
+                employee_password = #{employeePassword,jdbcType=VARCHAR},
+            </if>
+            <if test="permissionId != null">
+                permission_id = #{permissionId,jdbcType=INTEGER},
+            </if>
+            <if test="employeeCreateTime != null">
+                employee_create_time = #{employeeCreateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="employeeState != null">
+                employee_state = #{employeeState,jdbcType=INTEGER},
+            </if>
+            <if test="employeePicFront != null">
+                employee_pic_front = #{employeePicFront,jdbcType=VARCHAR},
+            </if>
+            <if test="employeeLevel != null">
+                employee_level = #{employeeLevel,jdbcType=VARCHAR},
+            </if>
+            <if test="employeeTel != null">
+                employee_tel = #{employeeTel,jdbcType=VARCHAR},
+            </if>
+            <if test="departmentId != null">
+                department_id = #{departmentId,jdbcType=INTEGER},
+            </if>
+            <if test="employeeEmail != null">
+                employee_email = #{employeeEmail,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.ksit.erp.entity.Employee">
+        update employee
+        set employee_name        = #{employeeName,jdbcType=VARCHAR},
+            role_id              = #{roleId,jdbcType=INTEGER},
+            employee_password    = #{employeePassword,jdbcType=VARCHAR},
+            permission_id        = #{permissionId,jdbcType=INTEGER},
+            employee_create_time = #{employeeCreateTime,jdbcType=TIMESTAMP},
+            employee_state       = #{employeeState,jdbcType=INTEGER},
+            employee_pic_front   = #{employeePicFront,jdbcType=VARCHAR},
+            employee_level       = #{employeeLevel,jdbcType=VARCHAR},
+            employee_tel         = #{employeeTel,jdbcType=VARCHAR},
+            department_id        = #{departmentId,jdbcType=INTEGER},
+            employee_email       = #{employeeEmail,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

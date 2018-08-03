@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ksit.erp.mapper.PartsMapper">
+  <resultMap id="BaseResultMap" type="com.ksit.erp.entity.Parts">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="parts_no" jdbcType="VARCHAR" property="partsNo" />
+    <result column="parts_name" jdbcType="VARCHAR" property="partsName" />
+    <result column="in_price" jdbcType="DECIMAL" property="inPrice" />
+    <result column="sale_price" jdbcType="DECIMAL" property="salePrice" />
+    <result column="inventory" jdbcType="INTEGER" property="inventory" />
+    <result column="type_id" jdbcType="INTEGER" property="typeId" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="parts_pic_front" jdbcType="VARCHAR" property="partsPicFront" />
+    <result column="parts_register_time" jdbcType="TIMESTAMP" property="partsRegisterTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, parts_no, parts_name, in_price, sale_price, inventory, type_id, address, parts_pic_front, 
+    parts_register_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from parts
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from parts
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ksit.erp.entity.Parts">
+    insert into parts (id, parts_no, parts_name, 
+      in_price, sale_price, inventory, 
+      type_id, address, parts_pic_front, 
+      parts_register_time)
+    values (#{id,jdbcType=INTEGER}, #{partsNo,jdbcType=VARCHAR}, #{partsName,jdbcType=VARCHAR}, 
+      #{inPrice,jdbcType=DECIMAL}, #{salePrice,jdbcType=DECIMAL}, #{inventory,jdbcType=INTEGER}, 
+      #{typeId,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR}, #{partsPicFront,jdbcType=VARCHAR}, 
+      #{partsRegisterTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ksit.erp.entity.Parts">
+    insert into parts
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="partsNo != null">
+        parts_no,
+      </if>
+      <if test="partsName != null">
+        parts_name,
+      </if>
+      <if test="inPrice != null">
+        in_price,
+      </if>
+      <if test="salePrice != null">
+        sale_price,
+      </if>
+      <if test="inventory != null">
+        inventory,
+      </if>
+      <if test="typeId != null">
+        type_id,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="partsPicFront != null">
+        parts_pic_front,
+      </if>
+      <if test="partsRegisterTime != null">
+        parts_register_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="partsNo != null">
+        #{partsNo,jdbcType=VARCHAR},
+      </if>
+      <if test="partsName != null">
+        #{partsName,jdbcType=VARCHAR},
+      </if>
+      <if test="inPrice != null">
+        #{inPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="salePrice != null">
+        #{salePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="inventory != null">
+        #{inventory,jdbcType=INTEGER},
+      </if>
+      <if test="typeId != null">
+        #{typeId,jdbcType=INTEGER},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="partsPicFront != null">
+        #{partsPicFront,jdbcType=VARCHAR},
+      </if>
+      <if test="partsRegisterTime != null">
+        #{partsRegisterTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ksit.erp.entity.Parts">
+    update parts
+    <set>
+      <if test="partsNo != null">
+        parts_no = #{partsNo,jdbcType=VARCHAR},
+      </if>
+      <if test="partsName != null">
+        parts_name = #{partsName,jdbcType=VARCHAR},
+      </if>
+      <if test="inPrice != null">
+        in_price = #{inPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="salePrice != null">
+        sale_price = #{salePrice,jdbcType=DECIMAL},
+      </if>
+      <if test="inventory != null">
+        inventory = #{inventory,jdbcType=INTEGER},
+      </if>
+      <if test="typeId != null">
+        type_id = #{typeId,jdbcType=INTEGER},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="partsPicFront != null">
+        parts_pic_front = #{partsPicFront,jdbcType=VARCHAR},
+      </if>
+      <if test="partsRegisterTime != null">
+        parts_register_time = #{partsRegisterTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ksit.erp.entity.Parts">
+    update parts
+    set parts_no = #{partsNo,jdbcType=VARCHAR},
+      parts_name = #{partsName,jdbcType=VARCHAR},
+      in_price = #{inPrice,jdbcType=DECIMAL},
+      sale_price = #{salePrice,jdbcType=DECIMAL},
+      inventory = #{inventory,jdbcType=INTEGER},
+      type_id = #{typeId,jdbcType=INTEGER},
+      address = #{address,jdbcType=VARCHAR},
+      parts_pic_front = #{partsPicFront,jdbcType=VARCHAR},
+      parts_register_time = #{partsRegisterTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
