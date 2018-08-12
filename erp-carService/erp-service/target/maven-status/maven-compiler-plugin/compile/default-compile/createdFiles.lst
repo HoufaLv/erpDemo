@@ -1,3 +1,8 @@
+com\ksit\erp\service\IDutyService.class
 com\ksit\erp\service\IRoleService.class
+com\ksit\erp\service\ICustomerService.class
+com\ksit\erp\service\IPartsTypeService.class
+com\ksit\erp\service\ICarService.class
+com\ksit\erp\service\IPartsService.class
 com\ksit\erp\service\IEmployeeService.class
 com\ksit\erp\service\IPermissionService.class

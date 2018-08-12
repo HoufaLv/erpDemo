@@ -14,6 +14,12 @@
         <module name="erp-service" />
         <module name="erp-service-impl" />
         <module name="erp-web-admin" />
+        <module name="erp-web-back-finance" />
+        <module name="erp-web-back-repair" />
+        <module name="erp-web-back-storage" />
+        <module name="erp-web-front-car" />
+        <module name="erp-web-front-customer" />
+        <module name="erp-web-front-forum" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +28,12 @@
       <module name="erp-service" target="1.8" />
       <module name="erp-service-impl" target="1.8" />
       <module name="erp-web-admin" target="1.8" />
+      <module name="erp-web-back-finance" target="1.5" />
+      <module name="erp-web-back-repair" target="1.8" />
+      <module name="erp-web-back-storage" target="1.8" />
+      <module name="erp-web-front-car" target="1.8" />
+      <module name="erp-web-front-customer" target="1.5" />
+      <module name="erp-web-front-forum" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

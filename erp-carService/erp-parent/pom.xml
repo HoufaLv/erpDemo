@@ -12,6 +12,12 @@
         <module>../erp-service</module>
         <module>../erp-service-impl</module>
         <module>../erp-web-admin</module>
+        <module>../erp-web-back-finance</module>
+        <module>../erp-web-front-car</module>
+        <module>../erp-web-back-storage</module>
+        <module>../erp-web-front-customer</module>
+        <module>../erp-web-front-forum</module>
+        <module>../erp-web-back-repair</module>
     </modules>
 
     <packaging>pom</packaging>

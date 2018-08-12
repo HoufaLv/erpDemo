@@ -1,0 +1,47 @@
+1.根据用户名或者邮箱 以及 账户角色 是否可用，来查询对应的用户
+<select id="queryEmployeeByQueryParam" resultMap="employeeRoleResultMap" parameterType="map">
+    select
+    employee.*,role.*
+    from
+    employee
+    left join employee_role on employee.id = employee_role.employee_id
+    left join role on role.id = employee_role.role_id
+    <choose>
+        -- 当用户选择了角色的时候，使用全量数据 右连接 查出来的账号id ，获得账号的信息，显示
+        <when test="roleId !=null and roleId != 0">
+            right join (
+            select employee.id
+            from employee left join employee_role on employee.id = employee_role.employee_id
+            <where>
+                employee_role.role_id = #{roleId}
+                <if test="nameMobile !=null and roleId != ''">
+                    and (
+                    (employee.employee_name like concat('%',#{nameMobile},'%'))
+                    or
+                    (employee.employee_email like concat('%',#{nameMobile},'%'))
+                    )
+                </if>
+                <if test="status !=null and status !=''">
+                    and employee.employee_state ='2'
+                </if>
+            </where>
+            ) as temp on employee.id = temp.id
+        </when>
+        <otherwise>
+        -- 没选角色，就模糊查询
+            <where>
+                <if test="nameMobile !=null and nameMobile !=''">
+                    (
+                    (employee.employee_name like concat('%',#{nameMobile},'%'))
+                    or
+                    (employee.employee_email like concat('%',#{nameMobile},'%'))
+                    )
+                </if>
+                <if test="status !=null and status !=''">
+                    and employee.employee_state ='2'
+                </if>
+            </where>
+        </otherwise>
+    </choose>
+    order by employee.id desc
+</select>

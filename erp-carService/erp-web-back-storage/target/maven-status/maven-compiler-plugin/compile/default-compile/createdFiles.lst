@@ -1,0 +1,5 @@
+com\ksit\erp\controller\HelloController.class
+com\ksit\erp\controller\PartsController.class
+com\ksit\erp\controller\exceptionHandler\ControllerExceptionHandler.class
+com\ksit\erp\shiro\MyFilterChainDefinition.class
+com\ksit\erp\shiro\MyRealm.class

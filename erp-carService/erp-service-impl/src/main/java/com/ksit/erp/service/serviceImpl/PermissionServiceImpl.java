@@ -205,6 +205,17 @@ public class PermissionServiceImpl implements IPermissionService {
     }
 
     /**
+     * 根据每一个角色id 找到所有的权限列表
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Permission> findPermissionWithRoleId(Integer id) {
+        return permissionMapper.findPermissionWithRoleId(id);
+    }
+
+    /**
      * 递归排序
      * @param sourceList
      * @param endList

@@ -10,8 +10,13 @@
     <ignored path="$PROJECT_DIR$/erp-service/target/" />
     <ignored path="$PROJECT_DIR$/erp-service-impl/target/" />
     <ignored path="$PROJECT_DIR$/erp-web-admin/target/" />
+    <ignored path="$PROJECT_DIR$/erp-web-back-finance/target/" />
+    <ignored path="$PROJECT_DIR$/erp-web-front-car/target/" />
+    <ignored path="$PROJECT_DIR$/erp-web-back-storage/target/" />
+    <ignored path="$PROJECT_DIR$/erp-web-front-customer/target/" />
+    <ignored path="$PROJECT_DIR$/erp-web-front-forum/target/" />
+    <ignored path="$PROJECT_DIR$/erp-web-back-repair/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,100 +39,31 @@
     <expand />
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1301535721">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="erp-carService" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EmployeeController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/EmployeeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/employee/update.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="128" column="50" selection-start-line="128" selection-start-column="50" selection-end-line="128" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/employee/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IEmployeeService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IEmployeeService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/EmployeeServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="192" selection-start-line="192" selection-end-line="192" />
-              <folding>
-                <element signature="e#4428#4429#0" expanded="true" />
-                <element signature="e#4488#4489#0" expanded="true" />
-                <element signature="e#4647#4648#0" expanded="true" />
-                <element signature="e#4684#4685#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeRoleMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/EmployeeRoleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/role/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/EmployeeMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="web" />
         <option value="HTML File" />
         <option value="spring-beans.schema" />
+        <option value="Jsp File" />
+        <option value="web" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -135,62 +71,68 @@
     <findStrings>
       <find>ShiroFilter</find>
       <find>console.log</find>
+      <find>defaultOption</find>
+      <find>call</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/include/sider.jsp" />
-        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/dto/ServerResponse.java" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/include/css.jsp" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/include/js.jsp" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/spring/spring.xml" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/test.html" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/PermissionMapper.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/PermissionMapper.xml" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/viewBackUp/home.jsp" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/homt.jsp" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/new.jsp" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/realm/MyRealm.java" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/spring/spring-shiro.xml" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/index.jsp" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/shiro/MyRealm.java" />
-        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/dto/PermissionDTO.java" />
-        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/Permission.java" />
-        <option value="$PROJECT_DIR$/erp-web-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/erp-service-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IPermissionService.java" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/home.jsp" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/role/home1.jsp" />
-        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/Role.java" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/PermissionControllerr.java" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/PermissionController.java" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/update.jsp" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/role/update.jsp" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/RoleController.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/PermissionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/RolePermissionMapper.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/RolePermissionMapper.xml" />
-        <option value="$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IRoleService.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/RoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/RoleMapper.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/RoleMapper.xml" />
-        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/Employee.java" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/role/home.jsp" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/employee/new.jsp" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/EmployeeMapper.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/EmployeeMapper.xml" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/EmployeeRoleMapper.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/EmployeeRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/employee/update.jsp" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/include/js.jsp" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/include/sider.jsp" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/customer/home.jsp" />
+        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/ErpCustomer.java" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/customer/new.jsp" />
+        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/util/Const.java" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/ErpCarMapper.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/ErpCarMapper.xml" />
+        <option value="$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/ICustomerService.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/ErpCustomerMapper.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/ErpCustomerMapper.xml" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/car/new.jsp" />
+        <option value="$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/ICarService.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/CarServiceImpl.java" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/car/list.jsp" />
+        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/ErpCar.java" />
+        <option value="$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IPartsTypeService.java" />
+        <option value="$PROJECT_DIR$/erp-web-back-storage/src/main/java/com/ksit/erp/controller/PartsController.java" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/CarController.java" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/pom.xml" />
+        <option value="$PROJECT_DIR$/erp-web-back-storage/src/main/resources/spring/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/resources/spring/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/erp-web-admin/src/main/resources/spring/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/shiro/MyRealm.java" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/src/main/java/com/ksit/erp/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/employee/home.jsp" />
-        <option value="$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/EmployeeController.java" />
-        <option value="$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IEmployeeService.java" />
-        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/EmployeeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/include/header.jsp" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/home.jsp" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/include/sider.jsp" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/service/401.jsp" />
+        <option value="$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
+        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/vo/ErpServiceVo.java" />
+        <option value="$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IDutyService.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/DutyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/ErpServiceMapper.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/ErpServiceMapper.xml" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/src/main/java/com/ksit/erp/controller/ServiceController.java" />
+        <option value="$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/service/list.jsp" />
+        <option value="$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IOrderService.java" />
+        <option value="$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IPartsService.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/PartsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/ErpPartsMapper.java" />
+        <option value="$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/ErpPartsMapper.xml" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/ErpParts.java" />
+        <option value="$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/order/new.jsp" />
       </list>
     </option>
   </component>
@@ -227,32 +169,29 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="erp-service-impl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="erp-web-back-repair" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="erp-service-impl" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="erp-web-back-repair" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="187" />
+    <option name="y" value="10" />
+    <option name="width" value="1585" />
+    <option name="height" value="1005" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="335" />
-    <option name="y" value="30" />
-    <option name="width" value="1525" />
-    <option name="height" value="985" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -379,181 +318,48 @@
             </path>
             <path>
               <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-              <item name="erp" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-              <item name="erp" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-              <item name="erp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-              <item name="erp" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="manage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="manage" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
+              <item name="erp-web-front-car" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/code/erp-carService/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/home.jsp" />
+    <property name="SearchEverywhereHistoryKey" value="Integer&#9;PSI&#9;JAVA://java.lang.Integer&#10;simpleAuthorizationInfo&#9;PSI&#9;JAVA://org.apache.shiro.authz.SimpleAuthorizationInfo" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/erp-web-admin" />
+    <property name="last_opened_file_path" value="E:/ide/cmder/vendor/git-for-windows/cmd/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\code\erp-carService\erp-web-admin\src\main\webapp\WEB-INF\views\manage\employee" />
-      <recent name="E:\code\erp-carService\erp-web-admin\src\main\webapp\WEB-INF\views\manage\role" />
-      <recent name="E:\code\erp-carService\erp-web-admin\src\main\webapp\viewBackUp" />
-      <recent name="E:\code\erp-carService\erp-web-admin\src\main\webapp\static\plugins\treegrid" />
-      <recent name="E:\code\erp-carService\erp-web-admin\src\main\webapp\static\plugins" />
+      <recent name="E:\code\erp-carService\erp-service-impl\src\main\resources\mapper" />
+      <recent name="E:\code\erp-carService\erp-service-impl\src\main\java\com\ksit\erp\mapper" />
+      <recent name="E:\code\erp-carService\erp-commons\src\main\java\com\ksit\erp\entity" />
+      <recent name="E:\code\erp-carService\erp-web-back-repair\src\main\webapp\WEB-INF\views\service" />
+      <recent name="E:\code\erp-carService\erp-web-back-repair\src\main\webapp\WEB-INF\views" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ksit.erp.controller" />
+      <recent name="com.ksit.erp.controller.exceptionHandler" />
       <recent name="com.ksit.erp.exception" />
       <recent name="com.ksit.erp.service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\erp-carService\erp-web-back-repair\src\main\webapp\WEB-INF\views" />
+      <recent name="E:\code\erp-carService\erp-web-admin\src\main\resources\spring" />
+      <recent name="E:\code\erp-carService\erp-parent" />
       <recent name="E:\code\erp-carService\erp-web-admin\src\main\webapp\WEB-INF\views\manage\role" />
       <recent name="E:\code\erp-carService\erp-web-admin\src\main\webapp\static\plugins\treegrid" />
     </key>
@@ -570,25 +376,44 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.web-admin">
+  <component name="RunManager" selected="Maven.erp-web-front-car">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="erp-commons [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/erp-commons" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="erp-parent [install]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -614,8 +439,61 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method v="2" />
     </configuration>
-    <configuration name="web-admin" type="MavenRunConfiguration" factoryName="Maven">
+    <configuration name="erp-service [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/erp-service" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="erp-service-impl [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/erp-service-impl" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="erp-web-admin" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -638,32 +516,101 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="erp-web-back-repair" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/erp-web-back-repair" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="erp-web-back-storage" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/erp-web-back-storage" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="erp-web-front-car" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/erp-web-front-car" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Maven.web-admin" />
+      <item itemvalue="Maven.erp-web-admin" />
+      <item itemvalue="Maven.erp-web-back-repair" />
+      <item itemvalue="Maven.erp-web-front-car" />
+      <item itemvalue="Maven.erp-web-back-storage" />
       <item itemvalue="Maven.erp-parent [install]" />
+      <item itemvalue="Maven.erp-service [install]" />
+      <item itemvalue="Maven.erp-service-impl [install]" />
+      <item itemvalue="Maven.erp-commons [install]" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -697,12 +644,35 @@
       <workItem from="1533141107049" duration="1447000" />
       <workItem from="1533169341776" duration="24458000" />
       <workItem from="1533214828409" duration="7587000" />
-      <workItem from="1533223485559" duration="20275000" />
+      <workItem from="1533223485559" duration="24549000" />
+      <workItem from="1533302691225" duration="8641000" />
+      <workItem from="1533342522731" duration="14684000" />
+      <workItem from="1533471408763" duration="925000" />
+      <workItem from="1533473649326" duration="8520000" />
+      <workItem from="1533515416031" duration="4012000" />
+      <workItem from="1533520536513" duration="1004000" />
+      <workItem from="1533521707612" duration="10143000" />
+      <workItem from="1533543556788" duration="3701000" />
+      <workItem from="1533563298007" duration="694000" />
+      <workItem from="1533565542947" duration="5847000" />
+      <workItem from="1533601626463" duration="14245000" />
+      <workItem from="1533651572797" duration="11809000" />
+      <workItem from="1533688154414" duration="15636000" />
+      <workItem from="1533732111341" duration="337000" />
+      <workItem from="1533732499543" duration="12744000" />
+      <workItem from="1533774725376" duration="17879000" />
+      <workItem from="1533819965946" duration="8615000" />
+      <workItem from="1533861134896" duration="22889000" />
+      <workItem from="1533909105479" duration="1192000" />
+      <workItem from="1533912264349" duration="6263000" />
+      <workItem from="1534003064488" duration="194000" />
+      <workItem from="1534003279988" duration="629000" />
+      <workItem from="1534006737290" duration="217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201782000" />
+    <option name="totallyTimeSpent" value="376876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -714,68 +684,68 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="150" y="8" width="1268" height="804" extended-state="0" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32863188" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49932975" weight="0.32863188" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32863188" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.50067025" side_tool="true" weight="0.32863188" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.12064343" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" weight="0.3526093" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27221438" />
-      <window_info anchor="bottom" id="Spring" order="11" weight="0.32863188" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32863188" />
-      <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.23659517" />
-      <window_info anchor="bottom" id="Problems" order="7" weight="0.32863188" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.22644629" />
+      <window_info id="Structure" order="1" sideWeight="0.50213677" side_tool="true" weight="0.13671875" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="3" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" weight="0.24954017" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info id="Structure" order="1" sideWeight="0.50213677" side_tool="true" weight="0.13733906" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24954017" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" weight="0.2919605" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Favorites" order="4" side_tool="true" weight="0.3294271" />
+      <window_info id="Designer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32863188" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="1.0" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" weight="0.20516717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32831737" />
+      <window_info anchor="bottom" id="Problems" order="7" weight="0.32863188" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32863188" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.49932975" weight="0.325811" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32863188" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.325811" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" weight="0.35356602" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.50067025" side_tool="true" weight="0.33568406" />
+      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49932975" weight="0.32863188" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24871355" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.24865952" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.17179145" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" visible="true" weight="0.24400564" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.16085792" />
+      <window_info id="Structure" order="1" sideWeight="0.50213677" side_tool="true" weight="0.13671875" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="3" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24954017" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2609309" />
-      <window_info anchor="bottom" id="Problems" order="7" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.23659517" />
-      <window_info id="Structure" order="1" sideWeight="0.50213677" side_tool="true" weight="0.13733906" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Favorites" order="4" side_tool="true" weight="0.3294271" />
       <window_info id="Designer" order="5" />
-      <window_info anchor="bottom" id="Spring" order="11" weight="0.32951653" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22708039" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" weight="0.1889986" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32831737" />
+      <window_info anchor="bottom" id="Problems" order="7" weight="0.32863188" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32863188" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.32863188" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32863188" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" weight="0.36953455" />
+      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.50067025" side_tool="true" weight="0.32863188" />
+      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49932975" weight="0.32863188" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24954017" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.24954017" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32863188" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" weight="0.16643159" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49932975" weight="0.32863188" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.19369973" />
-      <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.50067025" side_tool="true" weight="0.32863188" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.10924933" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -787,403 +757,385 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/PartsTypeServiceImpl.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/EmployeeServiceImpl.java</url>
-          <line>191</line>
-          <properties class="com.ksit.erp.service.serviceImpl.EmployeeServiceImpl" method="deleteEmployee">
+          <url>file://$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/CustomerController.java</url>
+          <line>38</line>
+          <properties class="com.ksit.erp.controller.CustomerController" method="newCustomer">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="103" />
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/CarController.java</url>
+          <line>53</line>
+          <properties class="com.ksit.erp.controller.CarController" method="newCar">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="104" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="MavenRunConfiguration">
+        <watch expression="employee.getEmployeeState()" />
+        <watch expression="Const.EMPLOYEE_NROMAL" />
+        <watch expression="employee.getEmployeeState()" />
+        <watch expression="Const.EMPLOYEE_NROMAL" />
+        <watch expression="employee.getEmployeeState().equals(Const.EMPLOYEE_NROMAL)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/spring/spring.xml">
+    <entry file="file://$PROJECT_DIR$/erp-web-back-storage/src/main/java/com/ksit/erp/controller/PartsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        <state relative-caret-position="15">
+          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/CarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
+            <element signature="e#2002#2003#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="111" column="12" selection-start-line="15" selection-start-column="3" selection-end-line="111" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/springmvc-servlet.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/resources/spring-shiro.xml" />
+    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/shiro/MyFilterChainDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-storage/src/main/resources/spring/spring-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/shiro/MyFilterChainDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/resources/spring/spring-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/resources/spring/spring-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/shiro/MyRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="730">
+          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="190">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/ide/mvn_lib/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar!/org/apache/shiro/subject/Subject.class">
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/java/com/ksit/erp/shiro/MyFilterChainDefinition.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/java/com/ksit/erp/shiro/MyRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        <state relative-caret-position="19">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permissionBack/home.jsp">
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/resources/spring/spring-shiro.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+        <state relative-caret-position="-284" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/springmvc-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/index.jsp">
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+        <state relative-caret-position="618">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/util/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/spring/spring-shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/ide/mvn_lib/org/apache/shiro/shiro-all/1.3.2/shiro-all-1.3.2.jar!/org/apache/shiro/realm/CachingRealm.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/dto/PermissionDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/Permission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/ide/mvn_lib/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="460" selection-start-line="460" selection-end-line="460" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/ide/mvn_lib/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2413">
-          <caret line="127" column="29" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/ide/mvn_lib/com/google/guava/guava/20.0/guava-20.0.jar!/com/google/common/collect/Iterators.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="339" selection-start-line="339" selection-end-line="339" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/static/dist/js/pages/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/include/js.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        <state relative-caret-position="168">
+          <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="352">
+          <caret line="105" column="32" lean-forward="true" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/shiro/MyRealm.java">
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/java/com/ksit/erp/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/role/home1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="36" column="43" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/PermissionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/PermissionControllerr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IPermissionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/role/update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="66" column="62" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/PermissionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="90" column="65" lean-forward="true" selection-start-line="90" selection-start-column="65" selection-end-line="90" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/RolePermissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/RolePermissionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="49" column="27" lean-forward="true" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/RoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="208" column="33" lean-forward="true" selection-start-line="208" selection-start-column="33" selection-end-line="208" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5742#5743#0" expanded="true" />
-            <element signature="e#5786#5787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/ide/mvn_lib/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2375">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/ide/mvn_lib/org/springframework/spring-tx/4.3.14.RELEASE/spring-tx-4.3.14.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="170" selection-start-line="170" selection-end-line="170" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/ide/mvn_lib/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
-          <folding>
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="970">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/employee/new.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
-          <caret line="119" column="52" lean-forward="true" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#5;n#div#0;n#form#0;n#div#1;n#div#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/EmployeeRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/EmployeeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/employee/update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="128" column="50" selection-start-line="128" selection-start-column="50" selection-end-line="128" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/role/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/EmployeeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/EmployeeRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        <state relative-caret-position="1331">
+          <caret line="113" column="5" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/employee/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+        <state relative-caret-position="483">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/ide/mvn_lib/org/springframework/spring-webmvc/4.3.14.RELEASE/spring-webmvc-4.3.14.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/include/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="531" selection-start-line="531" selection-end-line="531" />
+        <state relative-caret-position="-332">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IEmployeeService.java">
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        <state relative-caret-position="570">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/EmployeeServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/include/sider.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="192" selection-start-line="192" selection-end-line="192" />
-          <folding>
-            <element signature="e#4428#4429#0" expanded="true" />
-            <element signature="e#4488#4489#0" expanded="true" />
-            <element signature="e#4647#4648#0" expanded="true" />
-            <element signature="e#4684#4685#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="570">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/error/401.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-674">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/ErpPartsTypeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/vo/ErpServiceVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="jar://E:/ide/mvn_lib/org/springframework/spring-web/4.3.14.RELEASE/spring-web-4.3.14.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
+        <state relative-caret-position="167">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/EmployeeController.java">
+    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/dto/ResponseCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="96">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/ErpService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/ErpServiceMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/ErpServiceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/java/com/ksit/erp/controller/ServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/DutyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IDutyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="341" column="24" selection-start-line="334" selection-start-column="12" selection-end-line="353" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/service/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/ErpParts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/order/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="311" column="28" lean-forward="true" selection-start-line="311" selection-start-column="28" selection-end-line="311" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/CarServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#1642#1643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service/src/main/java/com/ksit/erp/service/IPartsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/PartsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding>
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/mapper/ErpPartsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/resources/mapper/ErpPartsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="49" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1193,10 +1145,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>erp-web-admin:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1204,7 +1158,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1239,10 +1193,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>erp-commons</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1262,6 +1218,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

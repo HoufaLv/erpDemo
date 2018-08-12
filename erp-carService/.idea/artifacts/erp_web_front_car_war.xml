@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="erp-web-front-car:war">
+    <output-path>$PROJECT_DIR$/erp-web-front-car/target</output-path>
+    <root id="archive" name="erp-web-front-car-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="erp-web-front-car:war exploded" />
+    </root>
+  </artifact>
+</component>

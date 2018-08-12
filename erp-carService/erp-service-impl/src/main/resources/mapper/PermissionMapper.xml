@@ -34,6 +34,22 @@
     <select id="queryHasChildNode" resultType="java.lang.Integer">
         select count(1) from permission where parent_id = #{id}
     </select>
+    <!--根据每一个角色id 找到所有的权限列表-->
+    <select id="findPermissionWithRoleId" resultType="com.ksit.erp.entity.Permission">
+        SELECT
+            <include refid="Base_Column_List"/>
+        FROM
+            permission
+        WHERE
+            id IN (
+                SELECT
+                    permission_id
+                FROM
+                    role_permission
+                WHERE
+                    role_permission.role_id = #{id}
+            )
+    </select>
 
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
         delete from permission

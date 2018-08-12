@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="erp-web-back-finance:war">
+    <output-path>$PROJECT_DIR$/erp-web-back-finance/target</output-path>
+    <root id="archive" name="erp-web-back-finance-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="erp-web-back-finance:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,4 +1,9 @@
 com\ksit\erp\controller\RoleController.class
-com\ksit\erp\controller\PermissionController.class
+com\ksit\erp\controller\EmployeeController$1.class
 com\ksit\erp\controller\PermissionControllerr.class
+com\ksit\erp\shiro\MyRealm.class
+com\ksit\erp\controller\PermissionController.class
+com\ksit\erp\controller\exceptionHandler\ControllerExceptionHandler.class
+com\ksit\erp\controller\EmployeeController.class
 com\ksit\erp\controller\HomeController.class
+com\ksit\erp\shiro\MyFilterChainDefinition.class

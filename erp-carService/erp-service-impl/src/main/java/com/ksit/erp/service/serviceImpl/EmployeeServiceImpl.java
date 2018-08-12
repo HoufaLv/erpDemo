@@ -205,4 +205,56 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
         return ServerResponse.createByErrorMessage("删除失败!");
     }
+
+    /**
+     * 冻结账户
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public ServerResponse iceEmployee(Integer id) {
+
+        int resultCount = employeeMapper.iceEmployee(id);
+        if (resultCount>0) {
+            return ServerResponse.createBySuccessMessage("冻结成功!");
+        }
+        return ServerResponse.createByErrorMessage("系统异常，请稍后再试");
+    }
+
+    /**
+     * 根据账号或者邮箱 和 角色类型来查询对应的员工
+     *
+     * @param paramMap
+     * @return
+     */
+    @Override
+    public List<Employee> queryEmployeeByQueryParam(HashMap<String, Object> paramMap) {
+        return employeeMapper.queryEmployeeByQueryParam(paramMap);
+    }
+
+    /**
+     * 保存登陆日志
+     *
+     * @param employeeLoginLog
+     */
+    @Override
+    public void saveLoginLog(EmployeeLoginLog employeeLoginLog) {
+        employeeLoginLogMapper.insert(employeeLoginLog);
+    }
+
+    /**
+     * 账户启用
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public ServerResponse unLockEmployee(Integer id) {
+        int resultCount = employeeMapper.unLockEmployee(id);
+        if (resultCount>0) {
+            return ServerResponse.createBySuccessMessage("启用成功!");
+        }
+        return ServerResponse.createByErrorMessage("系统异常，请稍后再试");
+    }
 }

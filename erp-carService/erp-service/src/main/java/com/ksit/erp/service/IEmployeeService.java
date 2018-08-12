@@ -2,7 +2,9 @@ package com.ksit.erp.service;
 
 import com.ksit.erp.dto.ServerResponse;
 import com.ksit.erp.entity.Employee;
+import com.ksit.erp.entity.EmployeeLoginLog;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -60,4 +62,32 @@ public interface IEmployeeService {
      * @return
      */
     ServerResponse deleteEmployee(Integer id);
+
+    /**
+     * 冻结账户
+     * @param id
+     * @return
+     */
+    ServerResponse iceEmployee(Integer id);
+
+    /**
+     * 根据账号或者邮箱 和 角色类型来查询对应的员工
+     * @param hashMap
+     * @return
+     */
+    List<Employee> queryEmployeeByQueryParam(HashMap<String, Object> hashMap);
+
+    /**
+     * 保存登陆日志
+     *
+     * @param employeeLoginLog
+     */
+    void saveLoginLog(EmployeeLoginLog employeeLoginLog);
+
+    /**
+     * 账户启用
+     * @param id
+     * @return
+     */
+    ServerResponse unLockEmployee(Integer id);
 }

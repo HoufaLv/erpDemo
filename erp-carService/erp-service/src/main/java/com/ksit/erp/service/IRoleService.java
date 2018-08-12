@@ -73,4 +73,11 @@ public interface IRoleService {
      * @return
      */
     List<Role> listRole();
+
+    /**
+     * 根据账号id 获取所有角色
+     * @param id
+     * @return
+     */
+    List<Role> findRolesWithEmployeeId(Integer id);
 }

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ksit.erp.mapper.ErpCarMapper">
+    <resultMap id="BaseResultMap" type="com.ksit.erp.entity.ErpCar">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="car_type" jdbcType="VARCHAR" property="carType"/>
+        <result column="car_licence_no" jdbcType="VARCHAR" property="carLicenceNo"/>
+        <result column="car_no" jdbcType="VARCHAR" property="carNo"/>
+        <result column="car_color" jdbcType="VARCHAR" property="carColor"/>
+        <result column="car_kilometer" jdbcType="VARCHAR" property="carKilometer"/>
+        <result column="car_create_time" jdbcType="TIMESTAMP" property="carCreateTime"/>
+        <result column="car_pic_front" jdbcType="VARCHAR" property="carPicFront"/>
+        <result column="car_pic_back" jdbcType="VARCHAR" property="carPicBack"/>
+        <result column="customer_id" jdbcType="INTEGER" property="customerId"/>
+        <result column="car_fix_time" jdbcType="INTEGER" property="carFixTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, car_type, car_licence_no, car_no, car_color, car_kilometer, car_create_time,
+        car_pic_front, car_pic_back, customer_id, car_fix_time
+    </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from erp_car
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 双边验证 -->
+    <select id="validate" resultType="java.lang.Integer" parameterType="map">
+        select count(1) from erp_car
+        where
+        <foreach collection="paramMap.keys" item="key" open="(" separator="," close=")">
+            ${key}
+        </foreach>
+        =
+        <foreach collection="paramMap.keys" item="key" open="(" separator="," close=")">
+            #{paramMap[${key}]}
+        </foreach>
+    </select>
+    <select id="selectByLicenceNo" resultType="com.ksit.erp.entity.ErpCar">
+        select<include refid="Base_Column_List"/>from erp_car where car_licence_no = #{licenceNo}
+    </select>
+    <!--根据车牌号 查找对应的车辆和车主信息-->
+    <select id="queryCarWithCustomerByLicenceNo" resultMap="CarWithCustomer">
+        SELECT
+            erp_car.*,erp_customer.*
+        FROM
+            erp_car
+            left JOIN erp_customer ON erp_car.customer_id = erp_customer.id
+        where
+            erp_car.car_licence_no = #{licenceNo}
+    </select>
+    <resultMap id="CarWithCustomer" type="com.ksit.erp.entity.ErpCar" extends="BaseResultMap">
+        <association property="erpCustomer" javaType="com.ksit.erp.entity.ErpCustomer">
+            <id property="id" column="id1"/>
+            <result property="customerName" column="customer_name"/>
+            <result property="customerIdCard" column="customer_id_card"/>
+            <result property="customerEmail" column="customer_email"/>
+            <result property="customerTel" column="customer_tel"/>
+        </association>
+    </resultMap>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+        delete from erp_car
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="com.ksit.erp.entity.ErpCar">
+        insert into erp_car (id, car_type, car_licence_no,
+                             car_no, car_color, car_kilometer,
+                             car_create_time, car_pic_front, car_pic_back,
+                             customer_id, car_fix_time)
+        values (#{id,jdbcType=INTEGER}, #{carType,jdbcType=VARCHAR}, #{carLicenceNo,jdbcType=VARCHAR},
+            #{carNo,jdbcType=VARCHAR}, #{carColor,jdbcType=VARCHAR}, #{carKilometer,jdbcType=VARCHAR},
+            #{carCreateTime,jdbcType=TIMESTAMP}, #{carPicFront,jdbcType=VARCHAR}, #{carPicBack,jdbcType=VARCHAR},
+            #{customerId,jdbcType=INTEGER}, #{carFixTime,jdbcType=INTEGER})
+    </insert>
+    <insert id="insertSelective" parameterType="com.ksit.erp.entity.ErpCar">
+        insert into erp_car
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="carType != null">
+                car_type,
+            </if>
+            <if test="carLicenceNo != null">
+                car_licence_no,
+            </if>
+            <if test="carNo != null">
+                car_no,
+            </if>
+            <if test="carColor != null">
+                car_color,
+            </if>
+            <if test="carKilometer != null">
+                car_kilometer,
+            </if>
+            <if test="carCreateTime != null">
+                car_create_time,
+            </if>
+            <if test="carPicFront != null">
+                car_pic_front,
+            </if>
+            <if test="carPicBack != null">
+                car_pic_back,
+            </if>
+            <if test="customerId != null">
+                customer_id,
+            </if>
+            <if test="carFixTime != null">
+                car_fix_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="carType != null">
+                #{carType,jdbcType=VARCHAR},
+            </if>
+            <if test="carLicenceNo != null">
+                #{carLicenceNo,jdbcType=VARCHAR},
+            </if>
+            <if test="carNo != null">
+                #{carNo,jdbcType=VARCHAR},
+            </if>
+            <if test="carColor != null">
+                #{carColor,jdbcType=VARCHAR},
+            </if>
+            <if test="carKilometer != null">
+                #{carKilometer,jdbcType=VARCHAR},
+            </if>
+            <if test="carCreateTime != null">
+                #{carCreateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="carPicFront != null">
+                #{carPicFront,jdbcType=VARCHAR},
+            </if>
+            <if test="carPicBack != null">
+                #{carPicBack,jdbcType=VARCHAR},
+            </if>
+            <if test="customerId != null">
+                #{customerId,jdbcType=INTEGER},
+            </if>
+            <if test="carFixTime != null">
+                #{carFixTime,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.ksit.erp.entity.ErpCar">
+        update erp_car
+        <set>
+            <if test="carType != null">
+                car_type = #{carType,jdbcType=VARCHAR},
+            </if>
+            <if test="carLicenceNo != null">
+                car_licence_no = #{carLicenceNo,jdbcType=VARCHAR},
+            </if>
+            <if test="carNo != null">
+                car_no = #{carNo,jdbcType=VARCHAR},
+            </if>
+            <if test="carColor != null">
+                car_color = #{carColor,jdbcType=VARCHAR},
+            </if>
+            <if test="carKilometer != null">
+                car_kilometer = #{carKilometer,jdbcType=VARCHAR},
+            </if>
+            <if test="carCreateTime != null">
+                car_create_time = #{carCreateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="carPicFront != null">
+                car_pic_front = #{carPicFront,jdbcType=VARCHAR},
+            </if>
+            <if test="carPicBack != null">
+                car_pic_back = #{carPicBack,jdbcType=VARCHAR},
+            </if>
+            <if test="customerId != null">
+                customer_id = #{customerId,jdbcType=INTEGER},
+            </if>
+            <if test="carFixTime != null">
+                car_fix_time = #{carFixTime,jdbcType=INTEGER},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.ksit.erp.entity.ErpCar">
+        update erp_car
+        set car_type        = #{carType,jdbcType=VARCHAR},
+            car_licence_no  = #{carLicenceNo,jdbcType=VARCHAR},
+            car_no          = #{carNo,jdbcType=VARCHAR},
+            car_color       = #{carColor,jdbcType=VARCHAR},
+            car_kilometer   = #{carKilometer,jdbcType=VARCHAR},
+            car_create_time = #{carCreateTime,jdbcType=TIMESTAMP},
+            car_pic_front   = #{carPicFront,jdbcType=VARCHAR},
+            car_pic_back    = #{carPicBack,jdbcType=VARCHAR},
+            customer_id     = #{customerId,jdbcType=INTEGER},
+            car_fix_time    = #{carFixTime,jdbcType=INTEGER}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

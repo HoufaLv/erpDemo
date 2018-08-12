@@ -43,4 +43,25 @@ public interface EmployeeMapper {
      * @return
      */
     Employee queryEmployeeWithRoleById(Integer id);
+
+    /**
+     * 冻结账户
+     * @param id
+     * @return
+     */
+    int iceEmployee(Integer id);
+
+    /**
+     * 根据账号或者邮箱 和 角色类型来查询对应的员工
+     * @param paramMap
+     * @return
+     */
+    List<Employee> queryEmployeeByQueryParam(HashMap<String, Object> paramMap);
+
+    /**
+     * 启用账户
+     * @param id
+     * @return
+     */
+    int unLockEmployee(Integer id);
 }

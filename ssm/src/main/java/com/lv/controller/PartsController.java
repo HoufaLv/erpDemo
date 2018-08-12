@@ -89,13 +89,13 @@ public class PartsController {
         return "parts/edit";
     }
 
-    @RequestMapping(value = "/update/{id:\\d+}",method = RequestMethod.POST)
-    public String updateParts(Parts parts,
-                              RedirectAttributes redirectAttributes){
-        int resultCount = iPartsService.updateParts(parts);
-
-        //todo 怎样处理异常信息
-        return "redirect:/parts";
-    }
+//    @RequestMapping(value = "/update/{id:\\d+}",method = RequestMethod.POST)
+//    public String updateParts(Parts parts,
+//                              RedirectAttributes redirectAttributes){
+//        int resultCount = iPartsService.updateParts(parts);
+//
+//        //todo 怎样处理异常信息
+//        return "redirect:/parts";
+//    }
 
 }

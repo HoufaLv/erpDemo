@@ -1,9 +1,10 @@
 package com.ksit.erp.mapper;
 
 import com.ksit.erp.entity.Permission;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
-
+@Mapper
 public interface PermissionMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -36,4 +37,11 @@ public interface PermissionMapper {
      * @return
      */
     int queryHasChildNode(Integer id);
+
+    /**
+     * 根据每一个角色id 找到所有的权限列表
+     * @param id
+     * @return
+     */
+    List<Permission> findPermissionWithRoleId(Integer id);
 }

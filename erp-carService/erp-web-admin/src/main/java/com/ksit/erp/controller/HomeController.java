@@ -8,6 +8,8 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.subject.Subject;
+import org.apache.shiro.web.util.SavedRequest;
+import org.apache.shiro.web.util.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,6 +34,16 @@ public class HomeController {
         return "home";
     }
 
+    @RequestMapping(value = "/401",method = RequestMethod.GET)
+    public String noAuthorize(){
+        return "error/401";
+    }
+
+    @RequestMapping(value = "/500",method = RequestMethod.GET)
+    public String newPermission(){
+        return "error/500";
+    }
+
     /**
      * 用户登出
      * @param httpSession
@@ -49,6 +61,20 @@ public class HomeController {
      */
     @RequestMapping(value = "/",method = RequestMethod.GET)
     public String login(){
+        Subject subject = SecurityUtils.getSubject();
+
+        //用户要切换账号
+        if (subject.isAuthenticated()) {
+            subject.logout();
+            return "redirect:/";
+        }
+
+        //用户输错了
+        if (subject.isRemembered()) {
+            return "home";
+        }
+
+        //否则再跳转到登陆页面
         return "index";
     }
 
@@ -59,15 +85,22 @@ public class HomeController {
                         HttpServletRequest httpServletRequest,
                         HttpSession httpSession,
                         RedirectAttributes redirectAttributes){
-
-
         Subject subject = SecurityUtils.getSubject();
 
         UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(employeeEmail,DigestUtils.md5Hex(employeePassword),rememberMe!=null,httpServletRequest.getRemoteAddr());
-
         try {
             subject.login(usernamePasswordToken);
-            return "redirect:/home";
+
+            //跳转到登陆前页面
+            SavedRequest savedRequest = WebUtils.getSavedRequest(httpServletRequest);
+
+            String url = "/home";
+
+            if (savedRequest!=null) {
+                url = savedRequest.getRequestUrl();
+            }
+
+            return "redirect:" + url;
         } catch (UnknownAccountException e) {
             redirectAttributes.addFlashAttribute("message","账户或者密码错误");
             e.printStackTrace();

@@ -63,4 +63,11 @@ public interface IPermissionService {
      * 
      */
     List<Permission> findAllPermissionSort();
+
+    /**
+     * 根据每一个角色id 找到所有的权限列表
+     * @param id
+     * @return
+     */
+    List<Permission> findPermissionWithRoleId(Integer id);
 }

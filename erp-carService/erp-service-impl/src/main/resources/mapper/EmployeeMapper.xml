@@ -65,6 +65,52 @@
         where
             employee_id = #{id}
     </select>
+    <!--根据账号或者邮箱 和 角色类型来查询对应的员工-->
+    <select id="queryEmployeeByQueryParam" resultMap="employeeRoleResultMap" parameterType="map">
+        select
+        employee.*,role.*
+        from
+        employee
+        left join employee_role on employee.id = employee_role.employee_id
+        left join role on role.id = employee_role.role_id
+        <choose>
+            <when test="roleId !=null and roleId != 0">
+                right join (
+                select employee.id
+                from employee left join employee_role on employee.id = employee_role.employee_id
+                <where>
+                    employee_role.role_id = #{roleId}
+                    <if test="nameMobile !=null and roleId != ''">
+                        and (
+                        (employee.employee_name like concat('%',#{nameMobile},'%'))
+                        or
+                        (employee.employee_email like concat('%',#{nameMobile},'%'))
+                        )
+                    </if>
+                    <if test="status !=null and status !=''">
+                        and employee.employee_state ='2'
+                    </if>
+                </where>
+                ) as temp on employee.id = temp.id
+            </when>
+            <otherwise>
+                <where>
+                    <if test="nameMobile !=null and nameMobile !=''">
+                        (
+                        (employee.employee_name like concat('%',#{nameMobile},'%'))
+                        or
+                        (employee.employee_email like concat('%',#{nameMobile},'%'))
+                        )
+                    </if>
+                    <if test="status !=null and status !=''">
+                        and employee.employee_state ='2'
+                    </if>
+                </where>
+            </otherwise>
+        </choose>
+        order by employee.id desc
+    </select>
+    <!--自定义结果集映射对象-->
     <resultMap id="employeeRoleResultMap" type="com.ksit.erp.entity.Employee" extends="BaseResultMap">
         <collection property="roleList" ofType="com.ksit.erp.entity.Role">
             <id property="id" column="id1"/>
@@ -226,5 +272,15 @@
             department_id        = #{departmentId,jdbcType=INTEGER},
             employee_email       = #{employeeEmail,jdbcType=VARCHAR}
         where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="iceEmployee">
+        update employee
+        set employee_state = '1'
+        where id = #{id}
+    </update>
+    <update id="unLockEmployee">
+        update employee
+        set employee_state = '2'
+        where id = #{id}
     </update>
 </mapper>

@@ -159,11 +159,13 @@ public class RoleServiceImpl implements IRoleService {
         rolePermissionMapper.deleteByRoleId(role.getId());
 
         //重新添加关系
-        for (Integer id : permissionId) {
-            RolePermission rolePermission = new RolePermission();
-            rolePermission.setRoleId(role.getId());
-            rolePermission.setPermissionId(id);
-            rolePermissionMapper.insert(rolePermission);
+        if (permissionId!=null) {
+            for (Integer id : permissionId) {
+                RolePermission rolePermission = new RolePermission();
+                rolePermission.setRoleId(role.getId());
+                rolePermission.setPermissionId(id);
+                rolePermissionMapper.insert(rolePermission);
+            }
         }
     }
 
@@ -207,5 +209,16 @@ public class RoleServiceImpl implements IRoleService {
     @Override
     public List<Role> listRole() {
         return roleMapper.listRole();
+    }
+
+    /**
+     * 根据账号id 获取所有角色
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public List<Role> findRolesWithEmployeeId(Integer id) {
+        return roleMapper.findRolesWithEmployeeId(id);
     }
 }

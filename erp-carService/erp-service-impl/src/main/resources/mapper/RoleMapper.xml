@@ -54,6 +54,23 @@
       from role
     </select>
 
+    <!--根据账号 id 获取所有角色-->
+    <select id="findRolesWithEmployeeId" resultType="com.ksit.erp.entity.Role">
+      SELECT
+        <include refid="Base_Column_List"/>
+      FROM
+        role
+      WHERE
+        id IN (
+          SELECT
+            role_id
+          FROM
+            employee_role
+          WHERE
+            employee_role.employee_id = #{id}
+        )
+    </select>
+
     <resultMap id="roleWithPermissionMap" type="com.ksit.erp.entity.Role" extends="BaseResultMap">
         <collection property="permissionList" ofType="com.ksit.erp.entity.Permission">
             <id property="id" column="id1"/>

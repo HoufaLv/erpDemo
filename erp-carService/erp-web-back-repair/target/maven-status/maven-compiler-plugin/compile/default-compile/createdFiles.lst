@@ -1,0 +1,4 @@
+com\ksit\erp\controller\ServiceController.class
+com\ksit\erp\controller\HomeController.class
+com\ksit\erp\shiro\MyFilterChainDefinition.class
+com\ksit\erp\shiro\MyRealm.class

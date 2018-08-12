@@ -1,0 +1,79 @@
+1.如果用户在登陆的情况下直接访问 / 页面，是要更换账号，退出当前账号
+if(subject.isAuthenticated()){
+    subject.logout();
+}
+if(subject.isRemembered()){
+    return "home";
+}
+return "index";
+
+2.如果登陆前用户有访问的页面，则登陆后跳转到登陆前的页面
+String url = null;
+SavedRequest savedRequest = WebUtils.getSavedRequest(requset);
+
+if(savedRequest!=null){
+    url = savedRequestUrl();
+}
+
+//登陆前有访问的页面
+return "redirect:/" + url;
+
+//如果登陆前没有访问路径
+return "redirect:/";
+
+3.Shiro 授权
+最终是要返回一个 SimpleAuthorizationInfo 对象去判断有没有授权,这个对象需要两个属性
+Set<String> roles   用户拥有的权限列表 <String>
+Set<String> stringPermissions   所有的权限列表 <String>
+
+获取当前登陆用户的 所有的权限列表 和 角色代号列表，根据角色代号来判断用户有没有该角色
+
+根据账户id 查询所有角色列表，将角色代号放入 Set<String> roles
+    SELECT
+        role.*
+    FROM
+        role
+    WHERE
+        id IN (
+            SELECT
+                role_id
+            FROM
+                employee_role
+            WHERE
+                employee_role.employee_id = 7
+        )
+
+分别根据每一个角色id 查询出所有的权限列表，将权限代号放入 Set<String> stringPermissions 中
+    SELECT
+        permission.*
+    FROM
+        permission
+    WHERE
+        id IN (
+            SELECT
+                permission_id
+            FROM
+                role_permission
+            WHERE
+                role_permission.role_id = 8
+        )
+
+4.在jsp 页面使用Shiro 标签库
+    在页面上获取账户的属性：<shiro: principal property="账户属性"/>
+
+    在页面上判断权限：
+    <shiro:hasRole name="admin : store">
+        <a href="/manage/employee/new" class="btn btn-primary btn-sm">
+            <i class="fa fa-plus">新增员工</i>
+        </a>
+    </shiro:hasRole>
+
+5.动态权限，从数据库中动态加载权限
+    为什么要使用动态权限？
+
+    如果要在方法上判断，需要某个权限才能访问则加 @RequiresPermissions("employee:add") 就可以
+        如果要使用注解的shior,则需要将 开启基于注解的shiro 这个选项放入SpringMVC 的配置文件中，而不是spring 的配置文件中
+    如果不想再方法上加注解，则将对应的url 配置到 spring-shiro 的配置文件中
+        /manage/employee/new = roles["角色代号1,角色代号2"]
+
+    这跟动态权限有啥关系?
