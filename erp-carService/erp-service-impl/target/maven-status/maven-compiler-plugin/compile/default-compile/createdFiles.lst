@@ -4,6 +4,7 @@ com\ksit\erp\service\serviceImpl\EmployeeServiceImpl$1.class
 com\ksit\erp\mapper\PermissionMapper.class
 com\ksit\erp\service\serviceImpl\CustomerServiceImpl.class
 com\ksit\erp\service\serviceImpl\RoleServiceImpl$1.class
+com\ksit\erp\service\serviceImpl\OrderServiceImpl.class
 com\ksit\erp\mapper\ErpOrderMapper.class
 com\ksit\erp\mapper\ErpPartsTypeMapper.class
 com\ksit\erp\mapper\ErpOrderPartsMapper.class

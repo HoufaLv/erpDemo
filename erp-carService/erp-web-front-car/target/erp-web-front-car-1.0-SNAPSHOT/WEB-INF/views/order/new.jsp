@@ -263,48 +263,58 @@
                     //将choosePartList 列表迭代一遍，没有当前这个配件，就将配件添加到列表，然后将列表展示到页面上
                     var addPartFlag = false;
 
+                    //写一个递归方法，添加元素
+                    // if (this.choosePart) {
+                    //     for (var i = 0; i < this.choosePartList.length; i++) {
+                    //
+                    //     }
+                    // }else{
+                    //     layer.msg("未选择配件!");
+                    // }
+
                     //当第一次来的时候，会直接将配件添加到列表中去
-                    if (this.choosePartList.length == 0) {
-                        alert("添加配件 列表为0");
-                        this.choosePart.num = 1;
-                        this.choosePartList.push(this.choosePart);
+                    // if (this.choosePartList.length == 0) {
+                    //     this.choosePart.num = 1;
+                    //     this.choosePartList.push(this.choosePart);
+                    //
+                    // }else {
+                    //     //配件列表中已经有数据了
+                    //     for (var i = 0; i < this.choosePartList.length; i++) {
+                    //         //如果配件列表中的数据和选中的是同一个配件，检查库存，如果不是同一个配件，添加配件
+                    //         if (this.choosePart == this.choosePartList[i]) {
+                    //             //检查库存是否还有，还有的话，就将chooseParts 的 num +1
+                    //             if (this.choosePartList[i].num < this.choosePartList[i].partsInventory) {
+                    //                 this.choosePartList[i].num++;
+                    //             }else{
+                    //                 layer.msg("库存不足!");
+                    //             }
+                    //         }else{
+                    //             //滚去添加配件,这一步有问题
+                    //             addPartFlag=true;
+                    //             continue;
+                    //         }
+                    //     }
+                    // }
+                    //
+                    // if (addPartFlag) {
+                    //     alert("准备进行第二次添加!");
+                    //     //准备进行第二次添加,如果添加的配件在列表中，则增加数量，否则进行新增操作
+                    //     for (var i = 0; i < this.choosePartList.length; i++) {
+                    //         //如果添加的配件在列表中存在，则增加数量
+                    //         if (this.choosePart == this.choosePartList[i]) {
+                    //             if (this.choosePartList[i].num < this.choosePartList[i].partsInventory) {
+                    //                 this.choosePartList[i].num++;
+                    //             }else{
+                    //                 layer.msg("库存不足!");
+                    //             }
+                    //         }
+                    //
+                    //     }
+                    // }
+                    // //如果不存在，则去添加
+                    // this.choosePart.num = 1;
+                    // this.choosePartList.push(this.choosePart);
 
-                    }else {
-                        //配件列表中已经有数据了
-                        for (var i = 0; i < this.choosePartList.length; i++) {
-                            //如果配件列表中的数据和选中的是同一个配件，检查库存，如果不是同一个配件，添加配件
-                            if (this.choosePart == this.choosePartList[i]) {
-                                //检查库存是否还有，还有的话，就将chooseParts 的 num +1
-                                if (this.choosePartList[i].num < this.choosePartList[i].partsInventory) {
-                                    this.choosePartList[i].num++;
-                                }else{
-                                    layer.msg("库存不足!");
-                                }
-                            }else{
-                                //滚去添加配件
-                                addPartFlag=true;
-                                break;
-                            }
-                        }
-                    }
-
-                    if (addPartFlag) {
-                        for (var i = 0; i < this.choosePartList.length; i++) {
-                            if (this.choosePart == this.choosePartList[i]) {
-                                if (this.choosePartList[i].num < this.choosePartList[i].partsInventory) {
-                                    this.choosePartList[i].num++;
-                                }else{
-                                    layer.msg("库存不足!");
-                                }
-                            }else{
-                                this.choosePart.num = 1;
-                                this.choosePartList.push(this.choosePart);
-                                break;
-                            }
-
-                        }
-
-                    }
 
                 }
             },

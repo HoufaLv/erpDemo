@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ksit.erp.mapper.ErpOrderServiceMapper">
+  <resultMap id="BaseResultMap" type="com.ksit.erp.entity.ErpOrderServiceKey">
+    <id column="order_id" jdbcType="INTEGER" property="orderId" />
+    <id column="service_id" jdbcType="INTEGER" property="serviceId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="com.ksit.erp.entity.ErpOrderServiceKey">
+    delete from erp_order_service
+    where order_id = #{orderId,jdbcType=INTEGER}
+      and service_id = #{serviceId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ksit.erp.entity.ErpOrderServiceKey">
+    insert into erp_order_service (order_id, service_id)
+    values (#{orderId,jdbcType=INTEGER}, #{serviceId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ksit.erp.entity.ErpOrderServiceKey">
+    insert into erp_order_service
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="orderId != null">
+        order_id,
+      </if>
+      <if test="serviceId != null">
+        service_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="orderId != null">
+        #{orderId,jdbcType=INTEGER},
+      </if>
+      <if test="serviceId != null">
+        #{serviceId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+</mapper>

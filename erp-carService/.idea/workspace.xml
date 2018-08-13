@@ -4,7 +4,86 @@
     <bookmark url="file://$PROJECT_DIR$/erp-web-admin/src/main/java/com/ksit/erp/controller/RoleController.java" line="22" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="08b72b42-716e-48d9-8e52-41f3217fd50d" name="Default" comment="" />
+    <list default="true" id="08b72b42-716e-48d9-8e52-41f3217fd50d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/erp-commons/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-commons/target/erp-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-commons/target/erp-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-commons/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-commons/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-service-impl/target/erp-service-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-service-impl/target/erp-service-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-service-impl/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-service-impl/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/erp-service-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-service/target/erp-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-service/target/erp-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-service/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-service/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/erp-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-admin/target/erp-web-admin-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-admin/target/erp-web-admin-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-admin/target/erp-web-admin-1.0-SNAPSHOT/WEB-INF/lib/erp-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-admin/target/erp-web-admin-1.0-SNAPSHOT/WEB-INF/lib/erp-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-admin/target/erp-web-admin-1.0-SNAPSHOT/WEB-INF/lib/erp-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-admin/target/erp-web-admin-1.0-SNAPSHOT/WEB-INF/lib/erp-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-admin/target/erp-web-admin-1.0-SNAPSHOT/WEB-INF/lib/erp-service-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-admin/target/erp-web-admin-1.0-SNAPSHOT/WEB-INF/lib/erp-service-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-admin/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-admin/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-finance/target/erp-web-back-finance-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-finance/target/erp-web-back-finance-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-finance/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-finance/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT/WEB-INF/classes/com/ksit/erp/controller/ServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT/WEB-INF/classes/com/ksit/erp/controller/ServiceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT/WEB-INF/lib/erp-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT/WEB-INF/lib/erp-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT/WEB-INF/lib/erp-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT/WEB-INF/lib/erp-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT/WEB-INF/lib/erp-service-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-repair/target/erp-web-back-repair-1.0-SNAPSHOT/WEB-INF/lib/erp-service-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-repair/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/conf/logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/conf/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/logs/access_log.2018-08-10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/index_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/service/list_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-repair/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/service/list_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT/WEB-INF/classes/com/ksit/erp/controller/PartsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT/WEB-INF/classes/com/ksit/erp/controller/PartsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT/WEB-INF/lib/erp-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT/WEB-INF/lib/erp-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT/WEB-INF/lib/erp-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT/WEB-INF/lib/erp-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT/WEB-INF/lib/erp-service-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-storage/target/erp-web-back-storage-1.0-SNAPSHOT/WEB-INF/lib/erp-service-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-back-storage/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-back-storage/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/order/new.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/order/new.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/classes/com/ksit/erp/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/classes/com/ksit/erp/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/lib/erp-commons-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/lib/erp-commons-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/lib/erp-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/lib/erp-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/lib/erp-service-impl-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/lib/erp-service-impl-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/views/order/new.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/erp-web-front-car-1.0-SNAPSHOT/WEB-INF/views/order/new.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/logs/access_log.2018-08-10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/logs/access_log.2018-08-11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/error/_401_jsp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/error/_401_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/sider_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/index_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/order/new_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/order/new_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/order/new_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-car/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/order/new_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-customer/target/erp-web-front-customer-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-customer/target/erp-web-front-customer-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-customer/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-customer/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-forum/target/erp-web-front-forum-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-forum/target/erp-web-front-forum-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erp-web-front-forum/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/erp-web-front-forum/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.core.resources/.projects/mybatiss/org.eclipse.jdt.core/state.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.core.resources/.projects/mybatiss/org.eclipse.jdt.core/state.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/2f252686844e66b95c1d9fd486ee49f9/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/2f252686844e66b95c1d9fd486ee49f9/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/3054e46582dc4b756af6cf99e980e7c7/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/3054e46582dc4b756af6cf99e980e7c7/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/63e2e3794f1db1fe8f049ad51566df8a/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/63e2e3794f1db1fe8f049ad51566df8a/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/e17b22cf3da97fbabc2c6b6ddcbae236/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/e17b22cf3da97fbabc2c6b6ddcbae236/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/f04d18b6d4c7f51b63c8d74e802fa42e/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/.plugins/org.eclipse.m2e.core/nexus/f04d18b6d4c7f51b63c8d74e802fa42e/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/activemq-test/target/classes/META-INF/maven/com.ksit/activemq-test/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/activemq-test/target/classes/META-INF/maven/com.ksit/activemq-test/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/mybatiss/target/classes/META-INF/maven/com.lv/mybatiss/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/mybatiss/target/classes/META-INF/maven/com.lv/mybatiss/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/spring-dubbo/dubbo-consumer/target/classes/META-INF/maven/com.ksit/dubbo-consumer/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/spring-dubbo/dubbo-consumer/target/classes/META-INF/maven/com.ksit/dubbo-consumer/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/spring-dubbo/dubbo-provider/target/classes/META-INF/maven/com.ksit/dubbo-provider/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/spring-dubbo/dubbo-provider/target/classes/META-INF/maven/com.ksit/dubbo-provider/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sts/spring-dubbo/dubbo-service/target/classes/META-INF/maven/com.ksit/dubbo-service/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../sts/spring-dubbo/dubbo-service/target/classes/META-INF/maven/com.ksit/dubbo-service/pom.properties" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/erp-parent/target/" />
     <ignored path="$PROJECT_DIR$/erp-commons/target/" />
     <ignored path="$PROJECT_DIR$/erp-service/target/" />
@@ -43,8 +122,36 @@
     <session id="1301535721">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="gitignore" value="2" />
+          <entry key="java" value="3" />
+          <entry key="jsp" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="Git file" value="2" />
+          <entry key="JAVA" value="3" />
+          <entry key="JSP" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="jsp" value="1573" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSP" value="1573" />
         </counts>
       </usages-collector>
     </session>
@@ -53,7 +160,17 @@
     <favorites_list name="erp-carService" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/erp-commons/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -167,22 +284,13 @@
           <item name="erp-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="erp-web-back-repair" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="erp-web-back-repair" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="187" />
-    <option name="y" value="10" />
+    <option name="x" value="18" />
+    <option name="y" value="2" />
     <option name="width" value="1585" />
     <option name="height" value="1005" />
   </component>
@@ -192,7 +300,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,130 +307,11 @@
               <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
               <item name="erp-commons" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-              <item name="erp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-commons" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-              <item name="erp" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-              <item name="erp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-service-impl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ksit" type="462c0819:PsiDirectoryNode" />
-              <item name="erp" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="erp-carService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erp-web-front-car" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -337,7 +325,7 @@
     <property name="last_opened_file_path" value="E:/ide/cmder/vendor/git-for-windows/cmd/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
@@ -667,12 +655,13 @@
       <workItem from="1533912264349" duration="6263000" />
       <workItem from="1534003064488" duration="194000" />
       <workItem from="1534003279988" duration="629000" />
-      <workItem from="1534006737290" duration="217000" />
+      <workItem from="1534006737290" duration="10663000" />
+      <workItem from="1534120336367" duration="2051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376876000" />
+    <option name="totallyTimeSpent" value="389373000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,17 +673,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="150" y="8" width="1268" height="804" extended-state="0" />
+    <frame x="55" y="9" width="1268" height="804" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.22644629" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.23223141" />
       <window_info id="Structure" order="1" sideWeight="0.50213677" side_tool="true" weight="0.13671875" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="3" side_tool="true" />
       <window_info id="Favorites" order="4" side_tool="true" weight="0.3294271" />
       <window_info id="Designer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32863188" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="1.0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32738096" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.5729167" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49865952" weight="0.20516717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -702,11 +691,11 @@
       <window_info anchor="bottom" id="Problems" order="7" weight="0.32863188" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.32863188" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32886904" />
       <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.49932975" weight="0.325811" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32863188" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.325811" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" weight="0.35356602" />
+      <window_info anchor="bottom" id="JRebel Executor" order="14" weight="0.3555241" />
       <window_info anchor="bottom" id="JRebel Console" order="15" sideWeight="0.50067025" side_tool="true" weight="0.33568406" />
       <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.49932975" weight="0.32863188" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -714,7 +703,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.24865952" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.17179145" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.12801608" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49786323" visible="true" weight="0.16085792" />
@@ -750,6 +739,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -796,25 +795,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/erp-web-back-storage/src/main/java/com/ksit/erp/controller/PartsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/CarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1978#1979#0" expanded="true" />
-            <element signature="e#2002#2003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/erp-web-admin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -993,13 +973,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/dto/ResponseCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/ErpService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1042,13 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="341" column="24" selection-start-line="334" selection-start-column="12" selection-end-line="353" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/erp-web-back-repair/src/main/webapp/WEB-INF/views/service/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -1056,37 +1022,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/ErpParts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/order/new.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="311" column="28" lean-forward="true" selection-start-line="311" selection-start-column="28" selection-end-line="311" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/erp-service-impl/src/main/java/com/ksit/erp/service/serviceImpl/CarServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#1642#1643#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,9 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1118,10 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-          <folding>
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1136,6 +1068,75 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1083">
           <caret line="57" column="49" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/dto/ResponseCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-admin/src/main/webapp/WEB-INF/views/manage/permission/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6726">
+          <caret line="354" column="10" selection-start-line="354" selection-start-column="10" selection-end-line="354" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-commons/target/classes/com/ksit/erp/dto/ResponseCode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-commons/src/main/java/com/ksit/erp/entity/ErpParts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/java/com/ksit/erp/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding>
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-web-front-car/src/main/webapp/WEB-INF/views/order/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="382" column="18" selection-start-line="382" selection-start-column="18" selection-end-line="382" selection-end-column="18" />
+          <folding>
+            <element signature="e#9069#10378#0#HTML" />
+            <element signature="e#10466#10833#0#HTML" />
+            <element signature="e#10921#14881#0#HTML" />
+            <element signature="e#11170#11184#0#HTML" />
+            <element signature="e#11521#11545#0#HTML" />
+            <element signature="e#14050#14645#0#HTML" />
+            <element signature="e#14690#14841#0#HTML" />
+            <element signature="e#15265#15478#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp-commons/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>

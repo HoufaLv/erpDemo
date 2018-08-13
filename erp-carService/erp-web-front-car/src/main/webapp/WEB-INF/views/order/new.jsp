@@ -11,9 +11,11 @@
         .td_title {
             font-weight: bold;
         }
-        .table>tbody>tr>td {
+
+        .table > tbody > tr > td {
             vertical-align: middle;
         }
+
         .num {
             width: 20px;
             border: none;
@@ -51,11 +53,13 @@
                         <tr>
                             <td class="td_title">车牌号:</td>
                             <td style="width: 180px">
-                                <input id="licenceNo" type="text" class="form-control" name="licenceNo" v-model="car.licenceNo">
+                                <input id="licenceNo" type="text" class="form-control" name="licenceNo"
+                                       v-model="car.licenceNo">
                             </td>
-                            <td >
+                            <td>
                             <span class="input-group-btn">
-                                <button type="button" class="btn btn-primary" id="search" @click="searchCarByLicenceNo"><i class="fa fa-search"> 查找</i></button>
+                                <button type="button" class="btn btn-primary" id="search" @click="searchCarByLicenceNo"><i
+                                        class="fa fa-search"> 查找</i></button>
                             </span>
                             </td>
                             <td class="td_title">客户姓名:</td>
@@ -93,11 +97,14 @@
                     <div class="form-inline">
                         <select class="form-control" name="" id="" v-model="serverType">
                             <option value="">请选择项目</option>
-                            <option v-for="item in serverTypes" :value="item">{{item.serviceName}} ---- {{item.serviceHour}} 工时</option>
+                            <option v-for="item in serverTypes" :value="item">{{item.serviceName}} ----
+                                {{item.serviceHour}} 工时
+                            </option>
                         </select>
                     </div>
                     <br>
-                    <table class="table table-bordered table-condensed table-hover" style="border-width: 2px;" id="infoForm">
+                    <table class="table table-bordered table-condensed table-hover" style="border-width: 2px;"
+                           id="infoForm">
                         <thead>
                         <tr>
                             <th>项目编号</th>
@@ -106,15 +113,17 @@
                         </tr>
                         </thead>
                         <tbody id="addTr">
-                            <tr>
-                                <td>{{serverType.serviceNo}}</td>
-                                <td>{{serverType.serviceName}}</td>
-                                <td v-if="serverType.serviceHour">{{serverType.serviceHour * 50}}</td>
-                            </tr>
+                        <tr>
+                            <td>{{serverType.serviceNo}}</td>
+                            <td>{{serverType.serviceName}}</td>
+                            <td v-if="serverType.serviceHour">{{serverType.serviceHour * 50}}</td>
+                        </tr>
                         </tbody>
                         <tfoot>
                         <tr>
-                            <td colspan="4" class="td_title" v-if="serverType.serviceHour">小计 ：{{serverType.serviceHour * 50}} 元</td>
+                            <td colspan="4" class="td_title" v-if="serverType.serviceHour">小计 ：{{serverType.serviceHour
+                                * 50}} 元
+                            </td>
                         </tr>
                         </tfoot>
                     </table>
@@ -136,9 +145,10 @@
                         <%--使用上面的配件类型去异步请求该类型下所有的配件，迭代加载--%>
                         <select class="form-control" name="parts" v-model="choosePart">
                             <option value="">请选择配件</option>
-                            <option v-for="item in partsList" :value="item">{{item.partsName}} -- {{item.partsNo}}</option>
+                            <option v-for="item in partsList" :value="item">{{item.partsName}} -- {{item.partsNo}}
+                            </option>
                         </select>
-                        <button class="btn btn-primary" @click="addParts">选择</button>
+                        <button class="btn btn-primary" @click="addParts">添加配件</button>
                     </div>
                     <br>
                     <table class="table table-bordered table-condensed table-hover" style="border-width: 2px;">
@@ -156,11 +166,14 @@
                             <td>{{item.partsNo}}</td>
                             <td>{{item.partsName}}</td>
                             <td>{{item.partsSalePrice}}</td>
-                            <td><button type="button" class="btn btn-box-tool"><i class="fa fa-minus"></i></button>
+                            <td>
+                                <button @click="subtractionPartNum" type="button" class="btn btn-box-tool"><i class="fa fa-minus"></i></button>
                                 <input type="text" class="num">{{item.num}}
-                                <button type="button" class="btn btn-box-tool"><i class="fa fa-plus"></i></button>
+                                <button @click="additionPartNum" type="button" class="btn btn-box-tool"><i class="fa fa-plus"></i></button>
                             </td>
-                            <td><button class="btn btn-danger btn-sm"><i class="fa fa-minus"></i></button></td>
+                            <td>
+                                <button @click="deletePart(item)" class="btn btn-danger btn-sm"><i class="fa fa-minus"></i></button>
+                            </td>
                         </tr>
 
                         </tbody>
@@ -179,7 +192,7 @@
                 </div>
             </div>
 
-            <button class="btn btn-success btn-block btn-sm" >下单</button>
+            <button id="addOrderBtn" @click="addOrder" class="btn btn-success btn-block btn-sm">下单</button>
 
 
         </section>
@@ -195,61 +208,61 @@
 <!-- ./wrapper -->
 <%@ include file="../include/js.jsp" %>
 <script>
-    $(function() {
+    $(function () {
         //创建Vue 模型
         var vm = new Vue({
-            el:"#app",
+            el: "#app",
             //数据,将页面上的对象，封装到这个里面
-            data:{
-                car:{},
-                customer:{},
-                serverTypes:[],
-                serverType:{},
-                partsTypes:[],
-                partsList:[],
-                partsType:{},
-                parts:[],
-                choosePart:{},
-                choosePartList:[]
+            data: {
+                car: {},
+                customer: {},
+                serverTypes: [],
+                serverType: {},
+                partsTypes: [],
+                partsList: [],
+                partsType: {},
+                parts: [],
+                choosePart: {},
+                choosePartList: []
             },
             //方法
-            methods:{
+            methods: {
                 //点击搜索按钮的时候,向后台是否存在该车牌号
-                searchCarByLicenceNo:function () {
+                searchCarByLicenceNo: function () {
                     //如果车牌号为空，则不能搜索
                     if (this.car.licenceNo) {
                         $.ajax({
-                            url:"/car/check/"+this.car.licenceNo,
-                            type:"GET",
-                            success:function (res) {
+                            url: "/car/check/" + this.car.licenceNo,
+                            type: "GET",
+                            success: function (res) {
                                 //如果对应的车存在，则将数据绑定到页面元素中，如果不存在，则将跳跳转到新增车辆页面
-                                if (res.status=="0") {
+                                if (res.status == "0") {
                                     //将数据显示到页面上,并将车牌号input 填充
-                                    vm.car=res.data;
-                                    vm.customer=res.data.erpCustomer;
+                                    vm.car = res.data;
+                                    vm.customer = res.data.erpCustomer;
 
-                                }else if (res.status == "1") {
+                                } else if (res.status == "1") {
                                     layer.confirm('车辆不存在，是否要添加车辆信息？', {
                                         btn: ['添加'] //按钮
-                                    }, function(){
+                                    }, function () {
                                         window.location.href = "/car/new"
                                     });
                                 }
                             },
-                            error:function () {
+                            error: function () {
                                 layer.msg("系统异常，请稍后再试!");
                             }
                         });
-                    }else{
+                    } else {
                         layer.msg("车牌号不能为空!");
                     }
 
                 },
 
                 //当点击配件类型的时候，将该配件下面所有的配件信息显示
-                changeType:function () {
-                    if (this.partsType.id){
-                        $.get("/order/parts/partsType/"+this.partsType.id).done(function (res) {
+                changeType: function () {
+                    if (this.partsType.id) {
+                        $.get("/order/parts/partsType/" + this.partsType.id).done(function (res) {
                             vm.partsList = res.data;
                         }).error(function () {
                             layer.msg("系统异常，请稍后再试!");
@@ -258,79 +271,134 @@
                 },
 
                 //点击添加配件的时候，将配件信息添加到下面的table 中
-                addParts:function () {
+                addParts: function () {
                     //将选择好的配件，添加到choosePartList 列表中去
                     //将choosePartList 列表迭代一遍，没有当前这个配件，就将配件添加到列表，然后将列表展示到页面上
-                    var addPartFlag = false;
+                    if (this.choosePart) {
 
-                    //写一个递归方法，添加元素
-                    // if (this.choosePart) {
-                    //     for (var i = 0; i < this.choosePartList.length; i++) {
-                    //
-                    //     }
-                    // }else{
-                    //     layer.msg("未选择配件!");
-                    // }
+                        var addPartFlag = false;
 
-                    //当第一次来的时候，会直接将配件添加到列表中去
-                    // if (this.choosePartList.length == 0) {
-                    //     this.choosePart.num = 1;
-                    //     this.choosePartList.push(this.choosePart);
-                    //
-                    // }else {
-                    //     //配件列表中已经有数据了
-                    //     for (var i = 0; i < this.choosePartList.length; i++) {
-                    //         //如果配件列表中的数据和选中的是同一个配件，检查库存，如果不是同一个配件，添加配件
-                    //         if (this.choosePart == this.choosePartList[i]) {
-                    //             //检查库存是否还有，还有的话，就将chooseParts 的 num +1
-                    //             if (this.choosePartList[i].num < this.choosePartList[i].partsInventory) {
-                    //                 this.choosePartList[i].num++;
-                    //             }else{
-                    //                 layer.msg("库存不足!");
-                    //             }
-                    //         }else{
-                    //             //滚去添加配件,这一步有问题
-                    //             addPartFlag=true;
-                    //             continue;
-                    //         }
-                    //     }
-                    // }
-                    //
-                    // if (addPartFlag) {
-                    //     alert("准备进行第二次添加!");
-                    //     //准备进行第二次添加,如果添加的配件在列表中，则增加数量，否则进行新增操作
-                    //     for (var i = 0; i < this.choosePartList.length; i++) {
-                    //         //如果添加的配件在列表中存在，则增加数量
-                    //         if (this.choosePart == this.choosePartList[i]) {
-                    //             if (this.choosePartList[i].num < this.choosePartList[i].partsInventory) {
-                    //                 this.choosePartList[i].num++;
-                    //             }else{
-                    //                 layer.msg("库存不足!");
-                    //             }
-                    //         }
-                    //
-                    //     }
-                    // }
-                    // //如果不存在，则去添加
-                    // this.choosePart.num = 1;
-                    // this.choosePartList.push(this.choosePart);
+                        //写一个递归方法，添加元素
+                        // if (this.choosePart) {
+                        //     for (var i = 0; i < this.choosePartList.length; i++) {
+                        //
+                        //     }
+                        // }else{
+                        //     layer.msg("未选择配件!");
+                        // }
 
+                        //当第一次来的时候，会直接将配件添加到列表中去
+                        // if (this.choosePartList.length == 0) {
+                        //     this.choosePart.num = 1;
+                        //     this.choosePartList.push(this.choosePart);
+                        //
+                        // }else {
+                        //     //配件列表中已经有数据了
+                        //     for (var i = 0; i < this.choosePartList.length; i++) {
+                        //         //如果配件列表中的数据和选中的是同一个配件，检查库存，如果不是同一个配件，添加配件
+                        //         if (this.choosePart == this.choosePartList[i]) {
+                        //             //检查库存是否还有，还有的话，就将chooseParts 的 num +1
+                        //             if (this.choosePartList[i].num < this.choosePartList[i].partsInventory) {
+                        //                 this.choosePartList[i].num++;
+                        //             }else{
+                        //                 layer.msg("库存不足!");
+                        //             }
+                        //         }else{
+                        //             //滚去添加配件,这一步有问题
+                        //             addPartFlag=true;
+                        //             continue;
+                        //         }
+                        //     }
+                        // }
+                        //
+                        // if (addPartFlag) {
+                        //     alert("准备进行第二次添加!");
+                        //     //准备进行第二次添加,如果添加的配件在列表中，则增加数量，否则进行新增操作
+                        //     for (var i = 0; i < this.choosePartList.length; i++) {
+                        //         //如果添加的配件在列表中存在，则增加数量
+                        //         if (this.choosePart == this.choosePartList[i]) {
+                        //             if (this.choosePartList[i].num < this.choosePartList[i].partsInventory) {
+                        //                 this.choosePartList[i].num++;
+                        //             }else{
+                        //                 layer.msg("库存不足!");
+                        //             }
+                        //         }
+                        //
+                        //     }
+                        // }
+                        // //如果不存在，则去添加
+                        // this.choosePart.num = 1;
+                        // this.choosePartList.push(this.choosePart);
+
+                        //点击选择配件的时候，将配件的信息添加到table中去
+
+                        //如果addFlag 为 false 的时候去添加配件，否则不添加
+                        for (var i = 0; i < this.choosePartList.length; i++) {
+
+                            if (this.choosePart == this.choosePartList[i]) {
+                                //如果选择的配件和配件列表中的配件相等的额话，增加数量而不是添加配件
+                                addPartFlag = true;
+                                if (this.choosePartList[i].num < this.choosePartList[i].partsInventory) {
+                                    this.choosePartList[i].num++;
+                                }else {
+                                    layer.msg("库存不足");
+                                }
+                                break;
+                            }
+                        }
+
+
+                        if (!addPartFlag) {
+                            this.choosePart.num = 1;
+                            this.choosePartList.push(this.choosePart);
+                        }
+                    }
+                },
+
+                //增加配件数量
+                additionPartNum:function () {
+                    if (this.choosePart.num<this.choosePart.partsInventory) {
+                        this.choosePart.num++;
+                    }else{
+                        layer.msg("库存不足!");
+                    }
+                },
+
+                //减少配件数量
+                subtractionPartNum:function () {
+                    if (this.choosePart.num>1) {
+                        this.choosePart.num--;
+                    }else{
+                        layer.msg("配件数量不能小于1!");
+                    }
+                },
+
+                //删除配件
+                deletePart:function (item) {
+                    layer.confirm("确定要删除配件吗?",function (index) {
+                        layer.close(index);
+                        var index = vm.choosePartList.indexOf(item);
+                        vm.choosePartList.splice(index,1);
+                    });
+                },
+
+                addOrder:function () {
 
                 }
             },
-            //计算属性
-            computed:{
+            computed: {
 
             },
+
             //钩子函数,用户初始化数据
-            mounted:function () {
+            mounted: function () {
                 $.ajax({
-                    type:"GET",
-                    URL:"/car/test",
-                    success:function (res) {
+                    type: "GET",
+                    URL: "/car/test",
+                    success: function (res) {
                         layer.msg("Vue 初始化成功!");
                     },
-                    error:function () {
+                    error: function () {
                         layer.msg("系统异常，请稍后再试!");
                     }
                 });

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置安全管理器-->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="myRealm"/>
+    </bean>
+    <!--配置缓存管理器-->
+
+    <!--配置生命周期管理器-->
+    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <!--配置自定义的realm-->
+    <bean id="myRealm" class="com.ksit.erp.shiro.MyRealm"/>
+
+    <!--配置自定义的权限控制-->
+    <bean id="filterChainDefinitionMap" class="com.ksit.erp.shiro.MyFilterChainDefinition">
+        <property name="abstractShiroFilter" ref="shiroFilter"/>
+        <property name="definitions">
+            <value>
+                /favicon.ico = anon
+                /static/** = anon
+                /logout = logout
+            </value>
+        </property>
+    </bean>
+
+    <!--配置shiro filter 过滤器-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <!--配置安全管理器-->
+        <property name="securityManager" ref="securityManager"/>
+        <!--配置登录的URL-->
+        <property name="loginUrl" value="/"/>
+        <!--配置登录成功的URL-->
+        <property name="successUrl" value="/home"/>
+        <!--访问没有权限的资源跳转的url-->
+        <property name="unauthorizedUrl" value="/401"/>
+        <!--规则,替换为动态加载权限-->
+    </bean>
+
+</beans>

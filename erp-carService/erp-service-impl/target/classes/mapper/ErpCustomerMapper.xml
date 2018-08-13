@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ksit.erp.mapper.ErpCustomerMapper">
+  <resultMap id="BaseResultMap" type="com.ksit.erp.entity.ErpCustomer">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="customer_name" jdbcType="VARCHAR" property="customerName" />
+    <result column="customer_id_card" jdbcType="VARCHAR" property="customerIdCard" />
+    <result column="customer_email" jdbcType="VARCHAR" property="customerEmail" />
+    <result column="customer_tel" jdbcType="VARCHAR" property="customerTel" />
+    <result column="customer_update_time" jdbcType="TIMESTAMP" property="customerUpdateTime" />
+    <result column="customer_create_time" jdbcType="TIMESTAMP" property="customerCreateTime" />
+    <result column="customer_pic_front" jdbcType="VARCHAR" property="customerPicFront" />
+    <result column="customer_integrate" jdbcType="INTEGER" property="customerIntegrate" />
+    <result column="customer_level" jdbcType="INTEGER" property="customerLevel" />
+    <result column="customer_provice" jdbcType="VARCHAR" property="customerProvice" />
+    <result column="customer_city" jdbcType="VARCHAR" property="customerCity" />
+    <result column="customer_region" jdbcType="VARCHAR" property="customerRegion" />
+    <result column="customer_password" jdbcType="VARCHAR" property="customerPassword"/>
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, customer_name, customer_id_card, customer_email, customer_tel, customer_update_time, 
+    customer_create_time, customer_pic_front, customer_integrate, customer_level, customer_provice, 
+    customer_city, customer_region, customer_password
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from erp_customer
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="validateCustomer" resultType="java.lang.Integer" parameterType="map">
+    select  count(1)
+      from erp_customer
+    where
+    <foreach collection="paramMap.keys" item="key" open="(" separator="," close=")">
+      ${key}
+    </foreach>
+    =
+    <foreach collection="paramMap.keys" item="key" open="(" separator="," close=")">
+      #{paramMap[${key}]}
+    </foreach>
+  </select>
+    <select id="listCustomer" resultType="com.ksit.erp.entity.ErpCustomer">
+      select <include refid="Base_Column_List"/>from erp_customer
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from erp_customer
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ksit.erp.entity.ErpCustomer" useGeneratedKeys="true" keyProperty="id">
+    insert into erp_customer (id, customer_name,customer_password, customer_id_card,
+      customer_email, customer_tel, customer_update_time, 
+      customer_create_time, customer_pic_front, 
+      customer_integrate, customer_level, customer_provice, 
+      customer_city, customer_region)
+    values (#{id,jdbcType=INTEGER}, #{customerName,jdbcType=VARCHAR}, #{customerPassword,jdbcType=VARCHAR}, #{customerIdCard,jdbcType=VARCHAR},
+      #{customerEmail,jdbcType=VARCHAR}, #{customerTel,jdbcType=VARCHAR}, #{customerUpdateTime,jdbcType=TIMESTAMP}, 
+      #{customerCreateTime,jdbcType=TIMESTAMP}, #{customerPicFront,jdbcType=VARCHAR}, 
+      #{customerIntegrate,jdbcType=INTEGER}, #{customerLevel,jdbcType=INTEGER}, #{customerProvice,jdbcType=VARCHAR}, 
+      #{customerCity,jdbcType=VARCHAR}, #{customerRegion,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ksit.erp.entity.ErpCustomer">
+    insert into erp_customer
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="customerName != null">
+        customer_name,
+      </if>
+      <if test="customerIdCard != null">
+        customer_id_card,
+      </if>
+      <if test="customerEmail != null">
+        customer_email,
+      </if>
+      <if test="customerTel != null">
+        customer_tel,
+      </if>
+      <if test="customerUpdateTime != null">
+        customer_update_time,
+      </if>
+      <if test="customerCreateTime != null">
+        customer_create_time,
+      </if>
+      <if test="customerPicFront != null">
+        customer_pic_front,
+      </if>
+      <if test="customerIntegrate != null">
+        customer_integrate,
+      </if>
+      <if test="customerLevel != null">
+        customer_level,
+      </if>
+      <if test="customerProvice != null">
+        customer_provice,
+      </if>
+      <if test="customerCity != null">
+        customer_city,
+      </if>
+      <if test="customerRegion != null">
+        customer_region,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="customerName != null">
+        #{customerName,jdbcType=VARCHAR},
+      </if>
+      <if test="customerIdCard != null">
+        #{customerIdCard,jdbcType=VARCHAR},
+      </if>
+      <if test="customerEmail != null">
+        #{customerEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="customerTel != null">
+        #{customerTel,jdbcType=VARCHAR},
+      </if>
+      <if test="customerUpdateTime != null">
+        #{customerUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="customerCreateTime != null">
+        #{customerCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="customerPicFront != null">
+        #{customerPicFront,jdbcType=VARCHAR},
+      </if>
+      <if test="customerIntegrate != null">
+        #{customerIntegrate,jdbcType=INTEGER},
+      </if>
+      <if test="customerLevel != null">
+        #{customerLevel,jdbcType=INTEGER},
+      </if>
+      <if test="customerProvice != null">
+        #{customerProvice,jdbcType=VARCHAR},
+      </if>
+      <if test="customerCity != null">
+        #{customerCity,jdbcType=VARCHAR},
+      </if>
+      <if test="customerRegion != null">
+        #{customerRegion,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ksit.erp.entity.ErpCustomer">
+    update erp_customer
+    <set>
+      <if test="customerName != null">
+        customer_name = #{customerName,jdbcType=VARCHAR},
+      </if>
+      <if test="customerIdCard != null">
+        customer_id_card = #{customerIdCard,jdbcType=VARCHAR},
+      </if>
+      <if test="customerEmail != null">
+        customer_email = #{customerEmail,jdbcType=VARCHAR},
+      </if>
+      <if test="customerTel != null">
+        customer_tel = #{customerTel,jdbcType=VARCHAR},
+      </if>
+      <if test="customerUpdateTime != null">
+        customer_update_time = #{customerUpdateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="customerCreateTime != null">
+        customer_create_time = #{customerCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="customerPicFront != null">
+        customer_pic_front = #{customerPicFront,jdbcType=VARCHAR},
+      </if>
+      <if test="customerIntegrate != null">
+        customer_integrate = #{customerIntegrate,jdbcType=INTEGER},
+      </if>
+      <if test="customerLevel != null">
+        customer_level = #{customerLevel,jdbcType=INTEGER},
+      </if>
+      <if test="customerProvice != null">
+        customer_provice = #{customerProvice,jdbcType=VARCHAR},
+      </if>
+      <if test="customerCity != null">
+        customer_city = #{customerCity,jdbcType=VARCHAR},
+      </if>
+      <if test="customerRegion != null">
+        customer_region = #{customerRegion,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ksit.erp.entity.ErpCustomer">
+    update erp_customer
+    set customer_name = #{customerName,jdbcType=VARCHAR},
+      customer_id_card = #{customerIdCard,jdbcType=VARCHAR},
+      customer_email = #{customerEmail,jdbcType=VARCHAR},
+      customer_tel = #{customerTel,jdbcType=VARCHAR},
+      customer_update_time = #{customerUpdateTime,jdbcType=TIMESTAMP},
+      customer_create_time = #{customerCreateTime,jdbcType=TIMESTAMP},
+      customer_pic_front = #{customerPicFront,jdbcType=VARCHAR},
+      customer_integrate = #{customerIntegrate,jdbcType=INTEGER},
+      customer_level = #{customerLevel,jdbcType=INTEGER},
+      customer_provice = #{customerProvice,jdbcType=VARCHAR},
+      customer_city = #{customerCity,jdbcType=VARCHAR},
+      customer_region = #{customerRegion,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
